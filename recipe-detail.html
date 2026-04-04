@@ -1,0 +1,251 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Details</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #ff914f;
+            color: white;
+        }
+        #recipeDetail {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .recipe-detail-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        body.dark-mode .recipe-detail-card {
+            background-color: #333;
+            color: white;
+        }
+        .recipe-detail-card img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+        }
+        .recipe-detail-card .content {
+            padding: 20px;
+        }
+        .recipe-detail-card h2,
+        .recipe-detail-card h3,
+        .recipe-detail-card p,
+        .recipe-detail-card li {
+            margin: 10px 0;
+        }
+        .recipe-detail-card ul {
+            padding-left: 20px;
+        }
+        button,
+        .back-link {
+            padding: 10px 16px;
+            border: none;
+            border-radius: 8px;
+            background-color: #fff;
+            color: #333;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .header-controls {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Recipe Details</h1>
+        <div class="header-controls">
+            <button id="backButton">Back</button>
+            <a class="back-link" href="index.html">Back to Recipe List</a>
+        </div>
+    </header>
+    <main id="recipeDetail"></main>
+
+    <script>
+        const recipeData = [
+            {
+                id: 1,
+                name: "Pancakes",
+                image: "C:\\Users\\Admin\\images\\photo-1612182062633-9ff3b3598e96.avif",
+                description: "Delicious fluffy pancakes perfect for breakfast.",
+                category: "breakfast",
+                ingredients: [
+                    "1 cup all-purpose flour",
+                    "2 tablespoons sugar",
+                    "2 teaspoons baking powder",
+                    "1/2 teaspoon salt",
+                    "1 cup milk",
+                    "1 large egg",
+                    "2 tablespoons melted butter"
+                ],
+                directions: [
+                    "In a large bowl, whisk together the flour, sugar, baking powder, and salt.",
+                    "In another bowl, beat the egg and then whisk in the milk and melted butter.",
+                    "Pour the wet ingredients into the dry ingredients and stir until just combined.",
+                    "Heat a non-stick skillet over medium heat and pour 1/4 cup of batter for each pancake.",
+                    "Cook until bubbles form on the surface, then flip and cook until golden brown on the other side.",
+                    "Serve with syrup and your favorite toppings."
+                ]
+            },
+            {
+                id: 2,
+                name: "Caesar Salad",
+                image: "C:\\Users\\Admin\\images\\photo-1669283714145-f97867f6c238.avif",
+                description: "Crisp romaine lettuce with a creamy Caesar dressing.",
+                category: "lunch",
+                ingredients: [
+                    "1 head romaine lettuce",
+                    "1/2 cup Caesar dressing",
+                    "1 clove garlic, minced",
+                    "2 anchovy fillets, minced (optional)",
+                    "1 cup croutons",
+                    "1/4 cup grated parmesan cheese"
+                ],
+                directions: [
+                    "Wash and chop the romaine lettuce.",
+                    "In a large bowl, whisk together the Caesar dressing, garlic, and anchovies.",
+                    "Add the lettuce to the dressing and toss to coat.",
+                    "Top with croutons and parmesan cheese."
+                ]
+            },
+            {
+                id: 3,
+                name: "Spaghetti Bolognese",
+                image: "C:\\Users\\Admin\\images\\photo-1622973536968-3ead9e780960.avif",
+                description: "Classic Italian pasta dish with a rich meat sauce.",
+                category: "dinner",
+                ingredients: [
+                    "1 lb ground beef",
+                    "1 onion, chopped",
+                    "2 cloves garlic, minced",
+                    "1 can (15 oz) tomato sauce",
+                    "1 can (14.5 oz) diced tomatoes",
+                    "2 tbsp tomato paste",
+                    "1 tsp dried oregano",
+                    "1 tsp dried basil",
+                    "Salt and pepper to taste",
+                    "12 oz spaghetti",
+                    "Grated parmesan cheese for serving"
+                ],
+                directions: [
+                    "In a large skillet, heat olive oil over medium heat. Add chopped onions and garlic, and sauté until softened.",
+                    "Add ground beef and cook until browned.",
+                    "Stir in tomato sauce, diced tomatoes, tomato paste, oregano, basil, salt, and pepper. Simmer for 20-30 minutes.",
+                    "Cook spaghetti according to package instructions.",
+                    "Drain and serve topped with the Bolognese sauce and grated parmesan cheese."
+                ]
+            },
+            {
+                id: 4,
+                name: "Chocolate Chip Cookies",
+                image: "C:\\Users\\Admin\\Downloads\\photo-1605243614624-277f48f46d52.avif",
+                description: "Delicious chocolate chip cookies perfect for a sweet treat.",
+                category: "dessert",
+                ingredients: [
+                    "1 cup (2 sticks) unsalted butter, softened",
+                    "1 cup granulated sugar",
+                    "1 cup packed brown sugar",
+                    "2 large eggs",
+                    "2 teaspoons vanilla extract",
+                    "3 cups all-purpose flour",
+                    "1 teaspoon baking soda",
+                    "1/2 teaspoon salt",
+                    "2 cups semisweet chocolate chips"
+                ],
+                directions: [
+                    "Preheat the oven to 350F (175C).",
+                    "In a large bowl, cream together the butter and sugar until light and fluffy.",
+                    "Beat in the eggs one at a time, then stir in the vanilla extract.",
+                    "In another bowl, whisk together the flour, baking soda, and salt. Gradually blend the dry ingredients into the wet mixture.",
+                    "Stir in the chocolate chips.",
+                    "Drop by rounded spoonfuls onto ungreased cookie sheets and bake for 10-12 minutes or until golden brown."
+                ]
+            }
+        ];
+
+function getQueryParam(name) {
+    return new URLSearchParams(window.location.search).get(name);
+}
+
+function buildIngredients(meal) {
+            const items = [];
+            for (let i = 1; i <= 20; i++) {
+                const ingredient = meal[`strIngredient${i}`];
+                const measure = meal[`strMeasure${i}`];
+                if (ingredient && ingredient.trim()) {
+                    items.push(`${measure ? measure.trim() + ' ' : ''}${ingredient.trim()}`.trim());
+                }
+            }
+            return items;
+        }
+
+        function renderRecipe(recipe) {
+            recipeDetail.innerHTML = `
+                <div class="recipe-detail-card">
+                    <img src="${recipe.image}" alt="${recipe.name} image">
+                    <div class="content">
+                        <h2>${recipe.name}</h2>
+                        <p>${recipe.description}</p>
+                        <p><strong>Category:</strong> ${recipe.category.toUpperCase()}</p>
+                        <h3>Ingredients</h3>
+                        <ul>
+                            ${recipe.ingredients.map(item => `<li>${item}</li>`).join('')}
+                        </ul>
+                        <h3>Directions</h3>
+                        <ol>
+                            ${recipe.directions.map(step => `<li>${step}</li>`).join('')}
+                        </ol>
+                    </div>
+                </div>
+            `;
+        }
+
+        const recipeId = Number(getQueryParam('id'));
+        const random = getQueryParam('random') === 'true';
+        const recipeDetail = document.getElementById('recipeDetail');
+        let recipe = null;
+
+        if (random) {
+            const storedMeal = sessionStorage.getItem('randomMeal');
+            if (storedMeal) {
+                const meal = JSON.parse(storedMeal);
+                recipe = {
+                    name: meal.strMeal,
+                    image: meal.strMealThumb,
+                    description: meal.strInstructions.split('. ')[0] || meal.strInstructions,
+                    category: meal.strCategory || 'Unknown',
+                    ingredients: buildIngredients(meal),
+                    directions: meal.strInstructions.split(/\.\s+|\n/).filter(Boolean)
+                };
+            }
+        } else if (recipeId) {
+            recipe = recipeData.find(item => item.id === recipeId);
+        }
+
+        if (!recipe) {
+            recipeDetail.innerHTML = '<div class="recipe-detail-card"><div class="content"><p>Recipe not found. Please return to the recipe list and try again.</p></div></div>';
+        } else {
+            renderRecipe(recipe);
+        }
+
+        document.getElementById('backButton').addEventListener('click', () => {
+            window.history.back();
+        });
+    </script>
+</body>
+</html>

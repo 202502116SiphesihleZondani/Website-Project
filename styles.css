@@ -1,16 +1,18 @@
+*, *::before, *::after { box-sizing: border-box; }
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: hsl(0, 0%, 98%);
-    transition: 0.3s;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 body.dark-mode {
     background-color: #1c1c1c;
     color: white;
-
 }
 
+/* ── Header ── */
 header {
     display: flex;
     flex-direction: column;
@@ -19,15 +21,44 @@ header {
     padding: 20px;
     background-color: #ff914f;
     color: white;
+    gap: 14px;
 }
 
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 760px;
+}
+
+.header-top h1 {
+    margin: 0;
+    font-size: 1.6rem;
+}
+
+.login-btn {
+    padding: 8px 18px;
+    background-color: white;
+    color: #333;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.login-btn:hover {
+    background-color: #f0e8e0;
+}
+
+/* ── Search ── */
 .search-row {
     display: flex;
     flex-direction: column;
     gap: 10px;
     width: 100%;
     max-width: 760px;
-    margin: 0 auto;
 }
 
 .search-row input,
@@ -51,13 +82,20 @@ header select {
     width: 100%;
 }
 
+/* ── Header actions row ── */
 .header-actions {
     display: flex;
     flex-direction: column;
     gap: 10px;
     width: 100%;
     max-width: 760px;
-    margin-top: 15px;
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .controls button {
@@ -65,9 +103,12 @@ header select {
     border: none;
     border-radius: 8px;
     background-color: #fff;
+    color: #333;
     cursor: pointer;
+    font-size: 14px;
 }
 
+/* ── Recipe grid ── */
 #recipes {
     display: grid;
     gap: 20px;
@@ -83,6 +124,96 @@ header select {
     padding: 40px 20px;
 }
 
+/* ── Recipe card ── */
+.recipe-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode .recipe-card {
+    background-color: #333;
+    color: white;
+}
+
+body.dark-mode .recipe-card h3,
+body.dark-mode .recipe-card p {
+    color: white;
+}
+
+.recipe-card:hover {
+    transform: scale(1.03);
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    background-color: #f0e0d0;
+}
+
+.recipe-card h3,
+.recipe-card p {
+    margin: 10px;
+}
+
+/* ── Add recipe form ── */
+#addRecipe {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 0 20px 40px;
+}
+
+#addRecipe h2 {
+    margin-bottom: 16px;
+    color: #ff914f;
+}
+
+#addRecipe input,
+#addRecipe textarea,
+#addRecipe select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+#addRecipe textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+body.dark-mode #addRecipe input,
+body.dark-mode #addRecipe textarea,
+body.dark-mode #addRecipe select {
+    background-color: #2a2a2a;
+    color: white;
+    border-color: #555;
+}
+
+#addRecipe button {
+    width: 100%;
+    background-color: #ff914f;
+    color: white;
+    padding: 12px;
+    border: none;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+#addRecipe button:hover {
+    background-color: #e07030;
+}
+
+/* ── Responsive ── */
 @media (min-width: 700px) {
     .search-row {
         flex-direction: row;
@@ -103,56 +234,31 @@ header select {
     }
 }
 
-.recipe-card {
-    background-color: white;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s, background-color 0.3s, color 0.3s;
+#addRecipe {
+    max-width: 760px;
+    margin: 40px auto;
+    padding: 0 20px 40px;
 }
 
-body.dark-mode .recipe-card {
-    background-color: #333;
-    color: white;
+#addRecipe h2 {
+    margin-bottom: 10px;
 }
 
-body.dark-mode .recipe-card h3,
-body.dark-mode .recipe-card p {
-    color: white;
-}
-
-.recipe-card:hover {
-    transform: scale(1.05);
-}
-
-.recipe-card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-}
-
-.recipe-card h3, .recipe-card p {
-    margin: 10px;
-}
-
-#addRecipe input,
-#addRecipe textarea,
-#addRecipe select {
+#addRecipe textarea {
     width: 100%;
     padding: 12px;
     margin: 8px 0;
     border: 1px solid #ccc;
     border-radius: 6px;
-   
+    font-family: inherit;
+    font-size: 15px;
+    resize: vertical;
+    min-height: 80px;
+    box-sizing: border-box;
 }
 
-#addRecipe button {
-    width: 100%;
-    background-color: #ff914f;
-    color: white;
-    padding: 12px;
-    border: none;
-    font-size: 16px;
-    border-radius: 6px;
-    cursor: pointer;
+#addRecipe input,
+#addRecipe select {
+    box-sizing: border-box;
 }
+ 

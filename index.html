@@ -49,10 +49,14 @@
                 <option value="dinner">Dinner</option>
                 <option value="dessert">Dessert</option>
             </select>
+            
+             <!-- Bug fix: these two fields were missing from the HTML -->
+            <textarea id="newIngredients" placeholder="Ingredients (one per line)" required></textarea>
+            <textarea id="newDirections" placeholder="Directions (one step per line)" required></textarea>
 
             <button id="addRecipeButton">Add Recipe</button>
     </section>
-
+        
     <script src="app.js"></script>
 
 </body>

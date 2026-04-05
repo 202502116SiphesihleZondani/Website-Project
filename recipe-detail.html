@@ -77,112 +77,15 @@
     <main id="recipeDetail"></main>
 
     <script>
-        const recipeData = [
-            {
-                id: 1,
-                name: "Pancakes",
-                image: "C:\\Users\\Admin\\images\\photo-1612182062633-9ff3b3598e96.avif",
-                description: "Delicious fluffy pancakes perfect for breakfast.",
-                category: "breakfast",
-                ingredients: [
-                    "1 cup all-purpose flour",
-                    "2 tablespoons sugar",
-                    "2 teaspoons baking powder",
-                    "1/2 teaspoon salt",
-                    "1 cup milk",
-                    "1 large egg",
-                    "2 tablespoons melted butter"
-                ],
-                directions: [
-                    "In a large bowl, whisk together the flour, sugar, baking powder, and salt.",
-                    "In another bowl, beat the egg and then whisk in the milk and melted butter.",
-                    "Pour the wet ingredients into the dry ingredients and stir until just combined.",
-                    "Heat a non-stick skillet over medium heat and pour 1/4 cup of batter for each pancake.",
-                    "Cook until bubbles form on the surface, then flip and cook until golden brown on the other side.",
-                    "Serve with syrup and your favorite toppings."
-                ]
-            },
-            {
-                id: 2,
-                name: "Caesar Salad",
-                image: "C:\\Users\\Admin\\images\\photo-1669283714145-f97867f6c238.avif",
-                description: "Crisp romaine lettuce with a creamy Caesar dressing.",
-                category: "lunch",
-                ingredients: [
-                    "1 head romaine lettuce",
-                    "1/2 cup Caesar dressing",
-                    "1 clove garlic, minced",
-                    "2 anchovy fillets, minced (optional)",
-                    "1 cup croutons",
-                    "1/4 cup grated parmesan cheese"
-                ],
-                directions: [
-                    "Wash and chop the romaine lettuce.",
-                    "In a large bowl, whisk together the Caesar dressing, garlic, and anchovies.",
-                    "Add the lettuce to the dressing and toss to coat.",
-                    "Top with croutons and parmesan cheese."
-                ]
-            },
-            {
-                id: 3,
-                name: "Spaghetti Bolognese",
-                image: "C:\\Users\\Admin\\images\\photo-1622973536968-3ead9e780960.avif",
-                description: "Classic Italian pasta dish with a rich meat sauce.",
-                category: "dinner",
-                ingredients: [
-                    "1 lb ground beef",
-                    "1 onion, chopped",
-                    "2 cloves garlic, minced",
-                    "1 can (15 oz) tomato sauce",
-                    "1 can (14.5 oz) diced tomatoes",
-                    "2 tbsp tomato paste",
-                    "1 tsp dried oregano",
-                    "1 tsp dried basil",
-                    "Salt and pepper to taste",
-                    "12 oz spaghetti",
-                    "Grated parmesan cheese for serving"
-                ],
-                directions: [
-                    "In a large skillet, heat olive oil over medium heat. Add chopped onions and garlic, and sauté until softened.",
-                    "Add ground beef and cook until browned.",
-                    "Stir in tomato sauce, diced tomatoes, tomato paste, oregano, basil, salt, and pepper. Simmer for 20-30 minutes.",
-                    "Cook spaghetti according to package instructions.",
-                    "Drain and serve topped with the Bolognese sauce and grated parmesan cheese."
-                ]
-            },
-            {
-                id: 4,
-                name: "Chocolate Chip Cookies",
-                image: "C:\\Users\\Admin\\Downloads\\photo-1605243614624-277f48f46d52.avif",
-                description: "Delicious chocolate chip cookies perfect for a sweet treat.",
-                category: "dessert",
-                ingredients: [
-                    "1 cup (2 sticks) unsalted butter, softened",
-                    "1 cup granulated sugar",
-                    "1 cup packed brown sugar",
-                    "2 large eggs",
-                    "2 teaspoons vanilla extract",
-                    "3 cups all-purpose flour",
-                    "1 teaspoon baking soda",
-                    "1/2 teaspoon salt",
-                    "2 cups semisweet chocolate chips"
-                ],
-                directions: [
-                    "Preheat the oven to 350F (175C).",
-                    "In a large bowl, cream together the butter and sugar until light and fluffy.",
-                    "Beat in the eggs one at a time, then stir in the vanilla extract.",
-                    "In another bowl, whisk together the flour, baking soda, and salt. Gradually blend the dry ingredients into the wet mixture.",
-                    "Stir in the chocolate chips.",
-                    "Drop by rounded spoonfuls onto ungreased cookie sheets and bake for 10-12 minutes or until golden brown."
-                ]
-            }
-        ];
+           // Bug fix: recipe-detail.html no longer duplicates the full recipeData array.
+        // It reads the selected recipe from sessionStorage (set by app.js on card click),
+        // or falls back to the MealDB random meal data.
 
-function getQueryParam(name) {
-    return new URLSearchParams(window.location.search).get(name);
-}
+        function getQueryParam(name) {
+            return new URLSearchParams(window.location.search).get(name);
+        }
 
-function buildIngredients(meal) {
+        function buildIngredients(meal) {
             const items = [];
             for (let i = 1; i <= 20; i++) {
                 const ingredient = meal[`strIngredient${i}`];
@@ -195,6 +98,14 @@ function buildIngredients(meal) {
         }
 
         function renderRecipe(recipe) {
+            const ingredientsList = Array.isArray(recipe.ingredients)
+                ? recipe.ingredients.map(item => `<li>${item}</li>`).join('')
+                : String(recipe.ingredients).split('\n').map(i => `<li>${i}</li>`).join('');
+
+            const directionsList = Array.isArray(recipe.directions)
+                ? recipe.directions.map(step => `<li>${step}</li>`).join('')
+                : String(recipe.directions).split('\n').map(s => `<li>${s}</li>`).join('');
+
             recipeDetail.innerHTML = `
                 <div class="recipe-detail-card">
                     <img src="${recipe.image}" alt="${recipe.name} image">
@@ -203,21 +114,16 @@ function buildIngredients(meal) {
                         <p>${recipe.description}</p>
                         <p><strong>Category:</strong> ${recipe.category.toUpperCase()}</p>
                         <h3>Ingredients</h3>
-                        <ul>
-                            ${recipe.ingredients.map(item => `<li>${item}</li>`).join('')}
-                        </ul>
+                        <ul>${ingredientsList}</ul>
                         <h3>Directions</h3>
-                        <ol>
-                            ${recipe.directions.map(step => `<li>${step}</li>`).join('')}
-                        </ol>
+                        <ol>${directionsList}</ol>
                     </div>
                 </div>
             `;
         }
 
-        const recipeId = Number(getQueryParam('id'));
-        const random = getQueryParam('random') === 'true';
         const recipeDetail = document.getElementById('recipeDetail');
+        const random = getQueryParam('random') === 'true';
         let recipe = null;
 
         if (random) {
@@ -233,12 +139,16 @@ function buildIngredients(meal) {
                     directions: meal.strInstructions.split(/\.\s+|\n/).filter(Boolean)
                 };
             }
-        } else if (recipeId) {
-            recipe = recipeData.find(item => item.id === recipeId);
+        } else {
+            // Read from sessionStorage — set by app.js when a card is clicked
+            const stored = sessionStorage.getItem('selectedRecipe');
+            if (stored) {
+                recipe = JSON.parse(stored);
+            }
         }
 
         if (!recipe) {
-            recipeDetail.innerHTML = '<div class="recipe-detail-card"><div class="content"><p>Recipe not found. Please return to the recipe list and try again.</p></div></div>';
+            recipeDetail.innerHTML = '<div class="recipe-detail-card"><div class="content"><p>Recipe not found. Please <a href="index.html">return to the recipe list</a> and try again.</p></div></div>';
         } else {
             renderRecipe(recipe);
         }
@@ -246,6 +156,10 @@ function buildIngredients(meal) {
         document.getElementById('backButton').addEventListener('click', () => {
             window.history.back();
         });
-    </script>
+
+        document.getElementById('darkModeToggle').addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+         </script>
 </body>
 </html>

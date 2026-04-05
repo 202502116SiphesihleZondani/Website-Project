@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login — What's Cooking Today?</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'DM Sans', Arial, sans-serif;
+            background-color: #fdf8f4;
+            min-height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .panel-left {
+            background-color: #ff914f;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 60px 48px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .panel-left::before {
+            content: '';
+            position: absolute;
+            width: 420px; height: 420px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.08);
+            top: -120px; left: -80px;
+        }
+
+        .panel-left::after {
+            content: '';
+            position: absolute;
+            width: 280px; height: 280px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.06);
+            bottom: -60px; right: -60px;
+        }
+
+        .brand { position: relative; z-index: 1; text-align: center; color: white; }
+        .brand-emoji { font-size: 64px; display: block; margin-bottom: 20px; }
+        .brand h1 { font-family: 'Playfair Display', serif; font-size: 32px; line-height: 1.2; margin-bottom: 14px; }
+        .brand p { font-size: 15px; opacity: 0.9; line-height: 1.6; max-width: 300px; }
+
+        .features { margin-top: 40px; display: flex; flex-direction: column; gap: 14px; width: 100%; max-width: 280px; position: relative; z-index: 1; }
+        .feat { display: flex; align-items: center; gap: 10px; color: white; font-size: 14px; opacity: 0.92; }
+        .feat-dot { width: 7px; height: 7px; border-radius: 50%; background: rgba(255,255,255,0.6); flex-shrink: 0; }
+
+        .panel-right {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 60px 48px;
+            background: #fdf8f4;
+        }
+
+        .login-box { width: 100%; max-width: 380px; }
+        .login-box h2 { font-family: 'Playfair Display', serif; font-size: 28px; color: #1a1208; margin-bottom: 6px; }
+        .login-box .subtitle { color: #7a6855; font-size: 14px; margin-bottom: 32px; }
+
+        .error-msg {
+            background: #fff0f0; border: 1px solid #f5c0c0; border-radius: 8px;
+            padding: 10px 14px; font-size: 13px; color: #c0392b;
+            margin-bottom: 18px; display: none;
+        }
+
+        .form-group { margin-bottom: 18px; }
+        label { display: block; font-size: 12px; font-weight: 500; color: #1a1208; margin-bottom: 7px; letter-spacing: 0.03em; }
+
+        input[type="email"],
+        input[type="password"],
+        input[type="text"] {
+            width: 100%; padding: 12px 14px;
+            border: 1.5px solid #e8d9cc; border-radius: 10px;
+            font-size: 15px; font-family: inherit;
+            background: white; color: #1a1208; outline: none;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+
+        input:focus { border-color: #ff914f; box-shadow: 0 0 0 3px rgba(255,145,79,0.14); }
+
+        .password-wrapper { position: relative; }
+        .password-wrapper input { padding-right: 44px; }
+        .toggle-password {
+            position: absolute; right: 13px; top: 50%; transform: translateY(-50%);
+            background: none; border: none; cursor: pointer; color: #7a6855; font-size: 16px; padding: 0;
+        }
+
+        .row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; }
+        .remember { display: flex; align-items: center; gap: 7px; font-size: 13px; color: #7a6855; cursor: pointer; }
+        .remember input[type="checkbox"] { width: 15px; height: 15px; accent-color: #ff914f; cursor: pointer; }
+        .forgot { font-size: 13px; color: #ff914f; text-decoration: none; font-weight: 500; }
+        .forgot:hover { text-decoration: underline; }
+
+        .btn-login {
+            width: 100%; padding: 13px; background: #ff914f; color: white;
+            border: none; border-radius: 10px; font-size: 15px; font-weight: 500;
+            font-family: inherit; cursor: pointer; transition: background 0.2s;
+        }
+        .btn-login:hover { background: #e07030; }
+        .btn-login:active { transform: scale(0.98); }
+
+        .divider {
+            display: flex; align-items: center; gap: 12px;
+            margin: 22px 0; color: #7a6855; font-size: 13px;
+        }
+        .divider::before, .divider::after { content: ''; flex: 1; height: 1px; background: #e8d9cc; }
+
+        .btn-guest {
+            width: 100%; padding: 12px; background: white; color: #1a1208;
+            border: 1.5px solid #e8d9cc; border-radius: 10px; font-size: 15px;
+            font-family: inherit; cursor: pointer; text-decoration: none;
+            display: block; text-align: center; transition: border-color 0.2s, background 0.2s;
+        }
+        .btn-guest:hover { border-color: #ff914f; background: #fff3ec; }
+
+        .signup-link { text-align: center; margin-top: 24px; font-size: 13px; color: #7a6855; }
+        .signup-link a { color: #ff914f; font-weight: 500; text-decoration: none; }
+        .signup-link a:hover { text-decoration: underline; }
+
+        @media (max-width: 680px) {
+            body { grid-template-columns: 1fr; }
+            .panel-left { display: none; }
+            .panel-right { padding: 48px 24px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="panel-left">
+        <div class="brand">
+            <span class="brand-emoji">🍳</span>
+            <h1>What's Cooking Today?</h1>
+            <p>Your personal recipe hub. Discover, save, and share meals you love.</p>
+        </div>
+        <div class="features">
+            <div class="feat"><div class="feat-dot"></div><span>Browse recipes by category</span></div>
+            <div class="feat"><div class="feat-dot"></div><span>Add your own creations</span></div>
+            <div class="feat"><div class="feat-dot"></div><span>Discover random meals daily</span></div>
+            <div class="feat"><div class="feat-dot"></div><span>Dark mode included</span></div>
+        </div>
+    </div>
+
+    <div class="panel-right">
+        <div class="login-box">
+            <h2>Welcome back</h2>
+            <p class="subtitle">Sign in to access your recipes</p>
+
+            <div class="error-msg" id="errorMsg"></div>
+
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" id="email" placeholder="you@example.com" autocomplete="email" />
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <div class="password-wrapper">
+                    <input type="password" id="password" placeholder="Enter your password" autocomplete="current-password" />
+                    <button class="toggle-password" id="togglePwd" type="button" aria-label="Toggle password visibility">👁</button>
+                </div>
+            </div>
+
+            <div class="row">
+                <label class="remember">
+                    <input type="checkbox" id="remember" /> Remember me
+                </label>
+                <a href="#" class="forgot">Forgot password?</a>
+            </div>
+
+            <button class="btn-login" id="loginBtn">Sign In</button>
+
+            <div class="divider">or</div>
+
+            <a href="index.html" class="btn-guest">Continue as Guest</a>
+
+            <p class="signup-link">Don't have an account? <a href="#">Create one</a></p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('togglePwd').addEventListener('click', function () {
+            const pwd = document.getElementById('password');
+            const show = pwd.type === 'password';
+            pwd.type = show ? 'text' : 'password';
+            this.textContent = show ? '🙈' : '👁';
+        });
+
+        function showError(msg) {
+            const el = document.getElementById('errorMsg');
+            el.textContent = msg;
+            el.style.display = 'block';
+        }
+
+        document.getElementById('loginBtn').addEventListener('click', function () {
+            const email    = document.getElementById('email').value.trim();
+            const password = document.getElementById('password').value;
+            document.getElementById('errorMsg').style.display = 'none';
+
+            if (!email || !password) {
+                showError('Please enter your email and password.');
+                return;
+            }
+            if (!email.includes('@')) {
+                showError('Please enter a valid email address.');
+                return;
+            }
+            if (password.length < 6) {
+                showError('Password must be at least 6 characters.');
+                return;
+            }
+
+            // Demo login — replace with real auth when ready
+            window.location.href = 'index.html';
+        });
+
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Enter') document.getElementById('loginBtn').click();
+        });
+    </script>
+</body>
+</html>

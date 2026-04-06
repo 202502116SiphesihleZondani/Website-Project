@@ -3,9 +3,8 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: ivory; 
-    color: grey;
-    transition: background-color 0.3; color 0.3;
+    background-color: hsl(0, 0%, 98%);
+    transition: background-color 0.3, color 0.3;
 }
 
 body.dark-mode {

@@ -204,6 +204,110 @@ let recipeData = [
             "Stir in the chocolate chips.",
             "Drop by rounded spoonfuls onto ungreased cookie sheets and bake for 10–12 minutes or until golden brown."
         ]
+        name:"Raspberry Mousse",
+        image:"C:\Users\Admin\Pictures\pic 3.jpg",
+        description:"light tangy whipped raspberry treat with a silky texture",
+        cateegory:"dessert",
+        ingredients:[
+            "2 cups fresh raspberries",
+            "/2 cup sugar"
+            "1 tablespoon lemon juice",
+            "1-1/2 teaspoons unflavored gelatin",
+            "1/4 cup cold water",
+            "1 cup heavy whipping cream",
+            "Fresh mint leaves, optional",
+        ],
+        directions:[
+            "Place the raspberries in a food processor; cover and puree. Strain and discard seeds. Transfer puree to a large bowl. Stir in sugar and lemon juice.",
+            "Transfer gelatin mixture to a large bowl. Beat on high speed until foamy. Gradually add cream; beat until thickened, about 2 minutes. Spoon into dessert dishes. Cover and refrigerate until set, 1-2 hours. If desired, garnish with mint and additional raspberries.",
+        ]
+        name:"Vanilla Pudding"
+        image:"C:\Users\Admin\Pictures\pic 2.webp",
+        description:"smooth and sweet classic custard",
+        category:"dessert",
+        ingredients:[
+            "1/3 cup white sugar",
+            "3 tablespoons cornstarch",
+            "1/2 teaspoon salt",
+            "2 cups whole milk",
+            "1 tablespoon butter",
+            "1 teaspoon vanilla extract",
+        ],
+        directions:[
+            "Mix sugar, cornstarch, and salt together in a medium heavy-bottomed saucepan.",
+            "Gradually whisk in milk until smooth. Bring to a boil over medium heat, whisking often, about 8 minutes. Once mixture comes to a boil, cook, whisking constantly, for 1 minute.",
+            "Remove saucepan from heat, and stir in butter and vanilla.",
+        ]
+        name:"Oreo Cookie Balls",
+        image:"C:\Users\Admin\Pictures\tt.webp",
+        descripttion:"crunchy oreo and creamy bites dipped in choco",
+        category:"dessert",
+        ingredients:[ 
+            "(16 oz.) package of Oreo cookies",
+            "1 (8 oz.) package of cream cheese",
+            "1 (24 oz.) package of white chocolate chips",
+            "1 (12 oz.) package of semisweet chocolate chips (optional)",
+        ],
+        directions:[
+            "Crush cookies in a blender or food processor until fine. Add in cream cheese, and bland until the mixture holds together.",
+            "Roll into 1-inch balls and arrange on baking sheet lined with wax or parchment paper. Chill for one hour.",
+            "Melt white chocolate according to microwave directions, or in a double boiler. Dip the balls in melted chocolate and place in a single layer on baking sheet.",
+            "Refrigerate for an additional hour, or until chocolate is firm.",
+        ]
+        name:"marshmallow",
+        image:""C:\Users\Admin\Pictures\mash.webp",
+        description:"fluffy mini marshmallows for sweet airly bite",
+        category:"dessert"
+        ingredients:[
+            "1 graham cracker sheet, broken in half",
+            "1/2 (1.55 oz.) Hershey’s milk chocolate bar",
+            "1-2 regular-size marshmallows",
+        ],
+        direction:[
+            "Build fire
+            "Stack the chocolate on top of one of the graham crackers to have it ready to go when the marshmallow is perfectly toasted.",
+            "Place the marshmallow(s) on the end of a metal toasting fork and keep the marshmallow close enough to the fire to caramelize the outside.",
+            "Keep cooking, rotating the marshmallow often, until the marshmallow reaches your desired degree of doneness, from just warmed to somewhat charcoaled.",
+            "Quickly place the marshmallow on top of the chocolate and use the remaining half of the graham cracker sheet to sandwich it in place.",
+        ]
+        name:"Pecan Pie Brownies",
+        image:"C:\Users\Admin\Pictures\pin.webp",
+        description:"nutty, caramel-rich pecan crumble with a hint of maple",
+        category:"dessert"
+        ingredients:[
+            "Unsalted butter: For a fudgy richness.",
+            "Chocolate chips: Use dark or bittersweet chocolate chips for a rich, chocolatey flavor, or substitute with chopped, high-quality chocolate bars.",
+            "Brown sugar: For additional flavor and a brownie with a chewy texture. Can use light or dark brown sugar.",
+            "Granulated sugar: To sweeten the brownies.",
+            "Large eggs: Binds and lifts the brownie batter.",
+            "Vanilla extract and kosher salt: Enhances the flavor.",
+            "Unsweetened cocoa powder: Deepens the chocolatey flavor.",
+            "All-purpose flour: Helps thicken and set the brownie batter.",
+            "for topping :",
+            "Brown sugar: For a richer, more caramel-like flavor.",
+            "Large eggs: Helps make a rich and silky filling.",
+            "Vanilla extract: An essential baking ingredient that elevates all the flavors of the other dishes.",
+            "Kosher salt: A bit of salt elevates the sweetness.",
+            "Butter: For richness.",
+            "Chopped pecans: You can use other nuts, but pecans are classic for this pecan pie flavor.",
+            "Bourbon: Adds complex flavor that complements the toasty pecans.",
+        ],
+        directions:[
+            "Make brownie batter: The brownie batter itself is made by melting chocolate chips in warm butter before whisking in sugar, eggs, vanilla, and salt.",
+            "Equal parts of cocoa and flour are then added to this liquid mixture to make a brownie batter that's amazingly rich in chocolate flavor. Bake until set.",
+            "Make pecan pie topping: While the brownies are in the oven, whisk together brown sugar, eggs, vanilla, melted butter, and bourbon to simulate the flavor pecan pie.",
+            "Instead of an actual pecan pie filling that requires a long time to set in the oven, this filling is an amalgamation of ingredients modified to bake into a", 
+            "sliceable layer in just 25 minutes. Stir pecans into the liquid filling, and pour it over the brownie base.",
+            "Finish baking: Then, bake it until the two distinct layers have melded into one sheet of decadent pecan pie brownies.",
+            "for topping:",
+            "When a dessert is this over-the-top, you might as well gild the lily.",
+            "Add nuts or chocolate chunks to the brownie batter before baking for additional texture.",
+            "Top the brownies with flaky sea salt for an additional hint of salt to contrast the sweetness of the bars.",
+            "Drizzle the tops with melted dark chocolate for a sophisticated presentation.",
+            "Swap the chopped pecans for pecan halves to change up the look of the bars.",
+            "Cut into bite-sized squares for a perfectly poppable dessert.",
+        ]
+
     }
 ];
 

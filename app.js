@@ -185,81 +185,91 @@ let recipeData = [
             "Cook spaghetti according to package instructions.",
             "Drain and serve topped with the Bolognese sauce and grated parmesan cheese."
         ]
-        name: "beef stew and rice";
-        image: "C:\Users\Puseletso Motsepe\OneDrive - Sol Plaatje University\Pictures\Screenshots\Screenshot 2026-04-04 130408.png";
-        description: "a hearty comfort food classic";
-        category: "dinner";
+
+    },
+    {  
+         id: 8,
+        name: "beef stew and rice",
+        image: "C:\\Users\\Puseletso Motsepe\\OneDrive - Sol Plaatje University\\Pictures\\Screenshots\\Screenshot 2026-04-04 130408.png",
+        description: "a hearty comfort food classic",
+        category: "dinner",
         ingredients:[
-            "2 lbs beef chuck, cut into 1-inch cubes"
-            "1 tbsp olive oil"
-            "1 large onion, diced"
-            "3 cloves garlic, minced"
-            "4 cups beef broth"
-            "2 cups water"
-            "3 carrots, sliced"
-            "2 potatoes, cubed"
-            "1 tsp thyme"
-            "1 tsp rosemary"
-            "Salt and pepper to taste"
-            "2 cups cooked rice"
-        ];
+            "2 lbs beef chuck, cut into 1-inch cubes",
+            "1 tbsp olive oil",
+            "1 large onion, diced",
+            "3 cloves garlic, minced",
+            "4 cups beef broth",
+            "2 cups water",
+            "3 carrots, sliced",
+            "2 potatoes, cubed",
+            "1 tsp thyme",
+            "1 tsp rosemary",
+            "Salt and pepper to taste",
+            "2 cups cooked rice",
+        ],
 
         directions:[
-            "Heat the olive oil in a large pot over medium-high heat. Add the beef cubes in batches, ensuring not to overcrowd the pot, and brown on all sides."
-            "Add the diced onion and minced garlic to the pot, sautéing until they’re soft and fragrant, about 3 minutes."
-            "Return the beef to the pot along with the beef broth, water, carrots, potatoes, thyme, and rosemary. Bring to a boil, then reduce the heat to low, cover, and simmer for 1.5 to 2 hours, or until the beef is tender. Tip: Skim off any excess fat that rises to the surface for a cleaner taste."
-            "Once the beef is tender, season the stew with salt and pepper to taste."
-            "Ladle the hot stew over a bed of fluffy cooked rice. The rice will soak up all the delicious broth, making every bite a perfect harmony of flavors and textures. Tip: For an extra touch of freshness, garnish with chopped parsley before serving"
+            "Heat the olive oil in a large pot over medium-high heat. Add the beef cubes in batches, ensuring not to overcrowd the pot, and brown on all sides.",
+            "Add the diced onion and minced garlic to the pot, sautéing until they’re soft and fragrant, about 3 minutes.",
+            "Return the beef to the pot along with the beef broth, water, carrots, potatoes, thyme, and rosemary. Bring to a boil, then reduce the heat to low, cover, and simmer for 1.5 to 2 hours, or until the beef is tender. Tip: Skim off any excess fat that rises to the surface for a cleaner taste.",
+            "Once the beef is tender, season the stew with salt and pepper to taste.",
+            "Ladle the hot stew over a bed of fluffy cooked rice. The rice will soak up all the delicious broth, making every bite a perfect harmony of flavors and textures. Tip: For an extra touch of freshness, garnish with chopped parsley before serving",
         ]
-        name: "grilled morrocan chicken";
-        image: "C:\Users\Puseletso Motsepe\OneDrive - Sol Plaatje University\Pictures\Screenshots\Screenshot 2026-04-06 213724.png";
-        description: "flavorable,aromatic dish inspired by bold spices and cooking tradition of morocco";
-        category:"dinner";
-        ingredients:[
-            "1½ to 1¾ lbs boneless skinless chicken breasts (or chicken tenderloins)"
-            "¼ cup extra-virgin olive oil"
-            "1 teaspoon salt"
-            "1 teaspoon sugar"
-            "3 cloves garlic, minced"
-            "2 teaspoons paprika"
-            "1 teaspoon ground cumin"
-            "½ teaspoon ground coriander"
-            "¼ teaspoon ground ginger"
-            "¼ teaspoon ground turmeric"
-            "¼ teaspoon ground cinnamon"
-            "⅛ teaspoon cayenne pepper"
-        ];
-       directions:[
-            "Place chicken breasts between 2 pieces of wax or parchment paper and, using a meat mallet, pound to an even ½-in (13-mm) thickness. (Skip this step if substituting chicken tenderloins.)"
-            "Mix all ingredients except chicken together in a small bowl or measuring cup. Place pounded chicken breasts inside a 1 gallon zip-lock bag. Add marinade to the bag, press air out and seal shut. Massage marinade into the breasts until evenly coated."
-            "Place the bag in a bowl in the refrigerator (to protect against leakage), and let the chicken marinate in the fridge for at least 5 hours or overnight."
-            "Clean grill and preheat to high. Place chicken breasts on grill, spooning marinade over top. Grill, covered, for 2 to 3 minutes per side. Do not overcook"
-       ];
 
-        name: "blackened catfish with mango avocado salsa";
-        image: "C:\Users\Puseletso Motsepe\OneDrive - Sol Plaatje University\Pictures\Screenshots\Screenshot 2026-04-06 214257.png";
-        description: "vibrant dish that combines deep,smooky heat with cool,tropical freshness"
-        category: "dinner";
+    },
+    {
+        id: 7,
+        name: "grilled morrocan chicken",
+        image: "C:\Users\Puseletso Motsepe\OneDrive - Sol Plaatje University\Pictures\Screenshots\Screenshot 2026-04-06 213724.png",
+        description: "flavorable,aromatic dish inspired by bold spices and cooking tradition of morocco",
+        category: "dinner",
         ingredients:[
-            "2 teaspoons dried oregano"
-            "2 teaspoons ground cumin"
-            "2 teaspoons paprika"
-            "2-1/4 teaspoons pepper, divided"
-            "3/4 teaspoon salt, divided"
-            "4 catfish fillets (6 ounces each)"
-            "1 medium mango, peeled and cubed"
-            "1 medium ripe avocado, peeled and cubed"
-            "1/3 cup finely chopped red onion"
-            "2 tablespoons minced fresh cilantro"
-            "2 tablespoons lime juice"
+            "1½ to 1¾ lbs boneless skinless chicken breasts (or chicken tenderloins)",
+            "¼ cup extra-virgin olive oil",
+            "1 teaspoon salt",
+            "1 teaspoon sugar",
+            "3 cloves garlic, minced",
+            "2 teaspoons paprika",
+            "1 teaspoon ground cumin",
+            "½ teaspoon ground coriander",
+            "¼ teaspoon ground ginger",
+            "¼ teaspoon ground turmeric",
+            "¼ teaspoon ground cinnamon",
+            "⅛ teaspoon cayenne pepper",
+        ],
+       directions:[
+            "Place chicken breasts between 2 pieces of wax or parchment paper and, using a meat mallet, pound to an even ½-in (13-mm) thickness. (Skip this step if substituting chicken tenderloins.)",
+            "Mix all ingredients except chicken together in a small bowl or measuring cup. Place pounded chicken breasts inside a 1 gallon zip-lock bag. Add marinade to the bag, press air out and seal shut. Massage marinade into the breasts until evenly coated.",
+            "Place the bag in a bowl in the refrigerator (to protect against leakage), and let the chicken marinate in the fridge for at least 5 hours or overnight.",
+            "Clean grill and preheat to high. Place chicken breasts on grill, spooning marinade over top. Grill, covered, for 2 to 3 minutes per side. Do not overcook",
+       ],
+    },
+    {
+        id: 9,
+        name: "blackened catfish with mango avocado salsa",
+        image: "C:\\Users\\Puseletso Motsepe\\OneDrive - Sol Plaatje University\\Pictures\\Screenshots\\Screenshot 2026-04-06 214257.png",
+        description: "vibrant dish that combines deep,smooky heat with cool,tropical freshness",
+        category: "dinner",
+        ingredients:[
+            "2 teaspoons dried oregano",
+            "2 teaspoons ground cumin",
+            "2 teaspoons paprika",
+            "2-1/4 teaspoons pepper, divided",
+            "3/4 teaspoon salt, divided",
+            "4 catfish fillets (6 ounces each)",
+            "1 medium mango, peeled and cubed",
+            "1 medium ripe avocado, peeled and cubed",
+            "1/3 cup finely chopped red onion",
+            "2 tablespoons minced fresh cilantro",
+            "2 tablespoons lime juice",
             "2 teaspoons olive oil"
-        ];
+        ],
 
         directions:[
-            "Combine the oregano, cumin, paprika, 2 teaspoons pepper and 1/2 teaspoon salt; rub over fillets. Refrigerate for at least 30 minutes"
-            "Meanwhile, in a small bowl, combine the mango, avocado, red onion, cilantro, lime juice and remaining salt and pepper. Chill until serving."
-            "In a large cast-iron skillet, cook fillets in oil over medium heat until fish flakes easily with a fork, 5-7 minutes on each side. Serve with salsa."
-        ];
+            "Combine the oregano, cumin, paprika, 2 teaspoons pepper and 1/2 teaspoon salt; rub over fillets. Refrigerate for at least 30 minutes",
+            "Meanwhile, in a small bowl, combine the mango, avocado, red onion, cilantro, lime juice and remaining salt and pepper. Chill until serving.",
+            "In a large cast-iron skillet, cook fillets in oil over medium heat until fish flakes easily with a fork, 5-7 minutes on each side. Serve with salsa.",
+        ],
         
     },
     {
@@ -287,13 +297,16 @@ let recipeData = [
             "Stir in the chocolate chips.",
             "Drop by rounded spoonfuls onto ungreased cookie sheets and bake for 10–12 minutes or until golden brown."
         ]
+    },
+    {
+        id: 9,
         name:"Raspberry Mousse",
         image:"C:\Users\Admin\Pictures\pic 3.jpg",
         description:"light tangy whipped raspberry treat with a silky texture",
         cateegory:"dessert",
         ingredients:[
             "2 cups fresh raspberries",
-            "/2 cup sugar"
+            "1/2 cup sugar",
             "1 tablespoon lemon juice",
             "1-1/2 teaspoons unflavored gelatin",
             "1/4 cup cold water",
@@ -304,11 +317,14 @@ let recipeData = [
             "Place the raspberries in a food processor; cover and puree. Strain and discard seeds. Transfer puree to a large bowl. Stir in sugar and lemon juice.",
             "Transfer gelatin mixture to a large bowl. Beat on high speed until foamy. Gradually add cream; beat until thickened, about 2 minutes. Spoon into dessert dishes. Cover and refrigerate until set, 1-2 hours. If desired, garnish with mint and additional raspberries.",
         ]
-        name:"Vanilla Pudding"
-        image:"C:\Users\Admin\Pictures\pic 2.webp",
-        description:"smooth and sweet classic custard",
-        category:"dessert",
-        ingredients:[
+        },
+         {
+            id: 10,
+            name: "Vanilla Pudding",
+            image: "C:\\Users\\Admin\\Pictures\\pic 2.webp",
+            description: "smooth and sweet classic custard",
+            category: "dessert",
+            ingredients:[
             "1/3 cup white sugar",
             "3 tablespoons cornstarch",
             "1/2 teaspoon salt",
@@ -321,6 +337,10 @@ let recipeData = [
             "Gradually whisk in milk until smooth. Bring to a boil over medium heat, whisking often, about 8 minutes. Once mixture comes to a boil, cook, whisking constantly, for 1 minute.",
             "Remove saucepan from heat, and stir in butter and vanilla.",
         ]
+
+    },
+    {
+        id: 11,
         name:"Oreo Cookie Balls",
         image:"C:\Users\Admin\Pictures\tt.webp",
         descripttion:"crunchy oreo and creamy bites dipped in choco",
@@ -337,26 +357,34 @@ let recipeData = [
             "Melt white chocolate according to microwave directions, or in a double boiler. Dip the balls in melted chocolate and place in a single layer on baking sheet.",
             "Refrigerate for an additional hour, or until chocolate is firm.",
         ]
+
+    },
+    {
+        id: 12,
         name:"marshmallow",
-        image:""C:\Users\Admin\Pictures\mash.webp",
+        image: "C:\Users\Admin\Pictures\mash.webp",
         description:"fluffy mini marshmallows for sweet airly bite",
-        category:"dessert"
+        category:"dessert",
         ingredients:[
             "1 graham cracker sheet, broken in half",
             "1/2 (1.55 oz.) Hershey’s milk chocolate bar",
             "1-2 regular-size marshmallows",
         ],
         direction:[
-            "Build fire
+            "Build fire and let it burn down to glowing embers. If you’re using a campfire, build the fire in a fire ring or pit and let it burn down to coals. If you’re using a grill, light the grill and let it heat up until the coals are covered with white ash.",
             "Stack the chocolate on top of one of the graham crackers to have it ready to go when the marshmallow is perfectly toasted.",
             "Place the marshmallow(s) on the end of a metal toasting fork and keep the marshmallow close enough to the fire to caramelize the outside.",
             "Keep cooking, rotating the marshmallow often, until the marshmallow reaches your desired degree of doneness, from just warmed to somewhat charcoaled.",
             "Quickly place the marshmallow on top of the chocolate and use the remaining half of the graham cracker sheet to sandwich it in place.",
         ]
+
+    },
+    {
+        id: 13,
         name:"Pecan Pie Brownies",
         image:"C:\Users\Admin\Pictures\pin.webp",
         description:"nutty, caramel-rich pecan crumble with a hint of maple",
-        category:"dessert"
+        category:"dessert",
         ingredients:[
             "Unsalted butter: For a fudgy richness.",
             "Chocolate chips: Use dark or bittersweet chocolate chips for a rich, chocolatey flavor, or substitute with chopped, high-quality chocolate bars.",

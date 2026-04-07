@@ -6,7 +6,7 @@
 let recipeData = [
     {
         id: 1,
-        1.name: "Pancakes",
+        name: "Pancakes",
         image: "photo-1612182062633-9ff3b3598e96.avif",
         description: "Delicious fluffy pancakes perfect for breakfast.",
         category: "breakfast",
@@ -27,7 +27,6 @@ let recipeData = [
             "Cook until bubbles form on the surface, then flip and cook until golden brown on the other side.",
             "Serve with syrup and your favorite toppings."
         ]
-        
     },
     {
         id: 2,
@@ -49,21 +48,23 @@ let recipeData = [
             "Add the lettuce to the dressing and toss to coat.",
             "Top with croutons and parmesan cheese."
         ]
-        
-      2.name:"Mega cheese Toastie",
-        image:"https://www.bing.com/images/search?view=detailV2&ccid=aJT%2fJ649&id=AB6FC9A04FD21FB7949E44B29A149142B19E9159&thid=OIP.aJT_J649Jd3R9YUu2XNr_wHaE8&mediaurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.6894ff27ae3d25ddd1f5852ed9736bff%3frik%3dWZGesUKRFJqyRA%26riu%3dhttp%253a%252f%252fignitemag.co.uk%252fwp-content%252fuploads%252f2024%252f02%252fLagomchef-2-jpg.webp%26ehk%3dAXMjBbx9Hh7M3U6wAtEMIpdt8KX8zrAeLbGFpEc7nI8%253d%26risl%3d%26pid%3dImgRaw%26r%3d0&exph=667&expw=1000&q=MEGA+CHEESE+TOASTIE&FORM=IRPRST&ck=5EB1034B81FA4A72465B5AEE152688A9&selectedIndex=11&itb=0",
-        description:"The ultimate comfort food,featuring layers of mature cheddar,mozzarella melted to perfection",
-        category:"lunch", 
-        Ingredients: [
+    },
+    {
+        id: 3,
+        name: "Mega cheese Toastie",
+        image: "Cheese Toast.webp",
+        description: "The ultimate comfort food, featuring layers of mature cheddar, mozzarella melted to perfection",
+        category: "lunch",
+        ingredients: [
             "3 tablespoons unsalted butter, at room temperature",
             "1/4 cup mayonnaise",
             "1/2 teaspoon smoked paprika",
             "Salt and freshly ground black pepper",
             "6 slices sourdough bread",
             "2 tablespoons cream cheese, at room temperature",
-            "1/2 cup shredded Cheddar",
+            "1/2 cup shredded Cheddar"
         ],
-        directions:[
+        directions: [
             "Preheat a skillet over medium heat. Mix the butter, mayo and paprika in a small bowl until well combined.",
             "Sprinkle with salt and pepper.",
             "Lightly butter one side of each of the bread slices with the mayo mixture.",
@@ -72,14 +73,16 @@ let recipeData = [
             "Distribute the Cheddar on the cream cheese-side of 3 of the bread slices.",
             "Place the remaining 3 bread slices on top.",
             "Place the sandwiches in the skillet and cook until golden on the bottom, about 3 minutes.",
-            "Flip the sandwiches and place a heavy-bottomed skillet on top of the sandwiches and cook until golden brown and the cheese is melted, about 4 minutes.",
+            "Flip the sandwiches and place a heavy-bottomed skillet on top of the sandwiches and cook until golden brown and the cheese is melted, about 4 minutes."
         ]
-
-        3.name:"Chicken Burgers",
-        image:"https://www.bing.com/images/search?view=detailV2&ccid=fkHNaA%2bF&id=3EF850FD514283D6163EA544C3B76763FA7EDB25&thid=OIP.fkHNaA-FZYcZEC3N-uBuAgHaJ2&mediaurl=https%3a%2f%2fwww.tamingtwins.com%2fwp-content%2fuploads%2f2023%2f06%2fimage-25.jpeg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.7e41cd680f85658719102dcdfae06e02%3frik%3dJdt%252b%252bmNnt8NEpQ%26pid%3dImgRaw%26r%3d0&exph=1597&expw=1200&q=chicken+burger&FORM=IRPRST&ck=5F7E7CD2195B0549DBEA1D2BF4A19BC1&selectedIndex=3&itb=0",
-        description:"sandwich with a chicken-based patty served between bun halves",
-        category:"lunch", 
-        Ingredients:[
+    },
+    {
+        id: 4,
+        name: "Chicken Burgers",
+        image: "https://www.bing.com/images/search?view=detailV2&ccid=fkHNaA%2bF&id=3EF850FD514283D6163EA544C3B76763FA7EDB25&thid=OIP.fkHNaA-FZYcZEC3N-uBuAgHaJ2&mediaurl=https%3a%2f%2fwww.tamingtwins.com%2fwp-content%2fuploads%2f2023%2f06%2fimage-25.jpeg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.7e41cd680f85658719102dcdfae06e02%3frik%3dJdt%252b%252bmNnt8NEpQ%26pid%3dImgRaw%26r%3d0&exph=1597&expw=1200&q=chicken+burger&FORM=IRPRST&ck=5F7E7CD2195B0549DBEA1D2BF4A19BC1&selectedIndex=3&itb=0",
+        description: "sandwich with a chicken-based patty served between bun halves",
+        category: "lunch",
+        ingredients: [
             "1 pound ground white meat chicken",
             "1&1/2 cups coarse to fine fresh bread crumbs, divided (not canned)",
             "1/2 cup low-fat milk",
@@ -87,9 +90,9 @@ let recipeData = [
             "1/4 teaspoon cayenne pepper",
             "3/4 teaspoon coarse grained salt",
             "Cracked black pepper",
-            "1 teaspoon olive oil",
+            "1 teaspoon olive oil"
         ],
-        directions:[,
+        directions: [
             "Use ground white meat chicken.",
             "Grind it yourself in a food processor.",
             "Remove all excess fat and cartilage from boneless, skinless chicken breast and tenders, cut into 1-inch cubes and pulse until coarsely chopped.",
@@ -101,59 +104,63 @@ let recipeData = [
             "Place remaining 1 cup bread crumbs on a dinner plate or cookie sheet.",
             "Divide chicken meat into 4 or 5 piles (you decide which portion size is best for you) and using your hands, shape into patties.",
             "Coat each patty with bread crumbs. Heat olive oil in a large non-stick skillet over medium heat and fry patties until golden and cooked through, about 5 minutes per side.",
-            "Serve immediately.",
-     ]
-        
-      4.name:"Chicken Bacon Ranch Panini",
-        image:"https://www.bing.com/images/search?view=detailV2&ccid=Z5BVF2Jf&id=5D31950E14B0FBA8D62B21399BCCAA5E6454C0AC&thid=OIP.Z5BVF2Jfp-ESube2XHtn-gHaEK&mediaurl=https%3a%2f%2fheidishomecooking.com%2fwp-content%2fuploads%2fChicken-Bacon-Ranch-Paninis-scaled.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.67905517625fa7e112b9b7b65c7b67fa%3frik%3drMBUZF6qzJs5IQ%26pid%3dImgRaw%26r%3d0&exph=1080&expw=1923&q=Chicken+Bacon+Ranch+Panini&FORM=IRPRST&ck=24D9831B4B933F9E7B1E0B478A951A1B&selectedIndex=5&itb=0",
-        description:"comforting ,hearty and quick to prepare hot pressed sandwich",
+            "Serve immediately."
+        ]
+    },
+    {
+        id: 5,
+        name: "Chicken Bacon Ranch Panini",
+        image: "https://www.bing.com/images/search?view=detailV2&ccid=Z5BVF2Jf&id=5D31950E14B0FBA8D62B21399BCCAA5E6454C0AC&thid=OIP.Z5BVF2Jfp-ESube2XHtn-gHaEK&mediaurl=https%3a%2f%2fheidishomecooking.com%2fwp-content%2fuploads%2fChicken-Bacon-Ranch-Paninis-scaled.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.67905517625fa7e112b9b7b65c7b67fa%3frik%3drMBUZF6qzJs5IQ%26pid%3dImgRaw%26r%3d0&exph=1080&expw=1923&q=Chicken+Bacon+Ranch+Panini&FORM=IRPRST&ck=24D9831B4B933F9E7B1E0B478A951A1B&selectedIndex=5&itb=0",
+        description: "comforting ,hearty and quick to prepare hot pressed sandwich",
         category: "lunch",
-        Ingredients:[
-                "2 chicken breasts, each cut in half through the middle to make 2 thinner breasts"<
-                "4 tablespoons butter, softened",
-                "1 tablespoon rapeseed oil",
-                "Spicy mustard, for spreading",
-                "6 slices crusty French bread",
-                "Ranch dressing, homemade or bottled, for spreading",
-                "6 slices sharp Cheddar",
-                "6 slices cooked bacon",
+        ingredients: [
+            "2 chicken breasts, each cut in half through the middle to make 2 thinner breasts",
+            "4 tablespoons butter, softened",
+            "1 tablespoon rapeseed oil",
+            "Spicy mustard, for spreading",
+            "6 slices crusty French bread",
+            "Ranch dressing, homemade or bottled, for spreading",
+            "6 slices sharp Cheddar",
+            "6 slices cooked bacon"
         ],
-          directions:[
-               "Fry the chicken breasts in 1 tablespoon butter and the rapeseed oil in a skillet over medium-high heat until done in the middle, about 8 minutes. Set aside.",
-                "To assemble the sandwiches, spread a generous amount of mustard on half of the bread slices. Spread a generous amount of ranch dressing on the other half. (Be generous; when the sandwiches cook, these will turn into more of a "sauce").",
-                "On the ranch-covered slices of bread, place a slice of cheese, a piece of chicken, 2 slices of bacon and a second slice of cheese.",
-                "Top each with the mustard-covered slice of bread. Butter the outsides of the bread generously with the remaining 3 tablespoons butter, then grill in a panini maker. (If you do not have a panini maker, you can grill the sandwiches in a skillet, laying a heavy skillet on top of the sandwiches to press them together. Turn to grill the other side in the same way.)",
-                "Slice the sandwiches in half and gobble them down immediately",
-            ]
-        
-        5.name:"Macaroni cheese with ham",
-        image:"https://www.tasteandtellblog.com/wp-content/uploads/2022/03/Mac-Cheese-Ham-1.jpg",
-        description:"comfort food dish consisting of tender pasta noodles enveloped in a velvety sheese sauce",
+        directions: [
+            "Fry the chicken breasts in 1 tablespoon butter and the rapeseed oil in a skillet over medium-high heat until done in the middle, about 8 minutes. Set aside.",
+            "To assemble the sandwiches, spread a generous amount of mustard on half of the bread slices. Spread a generous amount of ranch dressing on the other half. (Be generous; when the sandwiches cook, these will turn into more of a 'sauce').",
+            "On the ranch-covered slices of bread, place a slice of cheese, a piece of chicken, 2 slices of bacon and a second slice of cheese.",
+            "Top each with the mustard-covered slice of bread. Butter the outsides of the bread generously with the remaining 3 tablespoons butter, then grill in a panini maker. (If you do not have a panini maker, you can grill the sandwiches in a skillet, laying a heavy skillet on top of the sandwiches to press them together. Turn to grill the other side in the same way.)",
+            "Slice the sandwiches in half and gobble them down immediately"
+        ]
+    },
+    {
+        id: 6,
+        name: "Macaroni cheese with ham",
+        image: "https://www.tasteandtellblog.com/wp-content/uploads/2022/03/Mac-Cheese-Ham-1.jpg",
+        description: "comfort food dish consisting of tender pasta noodles enveloped in a velvety cheese sauce",
         category: "lunch",
-        Ingredients:[
-                "500g cavatappi (hollow corkscrew-shaped pasta) or macaroni",
-                "45g butter",
-                "45g plain flour",
-                "250ml chicken stock",
-                "375ml whole milk",
-                "Freshly ground black pepper",
-                "A few grates nutmeg",
-                "125g cup grated Gruyere cheese",
-                "125g grated white sharp Cheddar cheese",
-                "2 tbsps mustard",
-                "125g French ham, deli sliced, finely chopped",
+        ingredients: [
+            "500g cavatappi (hollow corkscrew-shaped pasta) or macaroni",
+            "45g butter",
+            "45g plain flour",
+            "250ml chicken stock",
+            "375ml whole milk",
+            "Freshly ground black pepper",
+            "A few grates nutmeg",
+            "125g cup grated Gruyere cheese",
+            "125g grated white sharp Cheddar cheese",
+            "2 tbsps mustard",
+            "125g French ham, deli sliced, finely chopped"
         ],
-        directions:[
+        directions: [
             "Bring a large pot of salted water to a boil and add the pasta. Cook pasta to just shy of al dente.",
             "Heat a saucepan with butter over medium heat, whisk in flour and cook for 1 minute.",
             "Whisk in stock then milk and allow the sauce to thicken.",
             "Season with salt, pepper and nutmeg. Stir in cheeses in a figure eight motion.",
             "Stir in mustard and ham and remove the sauce from heat.",
-            "Drain pasta and combine with sauce.",
-            ]
- },
+            "Drain pasta and combine with sauce."
+        ]
+    },
     {
-        id: 3,
+        id: 7,
         name: "Spaghetti Bolognese",
         image: "photo-1622973536968-3ead9e780960.avif",
         description: "Classic Italian pasta dish with a rich meat sauce.",
@@ -180,7 +187,7 @@ let recipeData = [
         ]
     },
     {
-        id: 4,
+        id: 8,
         name: "Chocolate Chip Cookies",
         image: "https://images.unsplash.com/photo-1605243614624-277f48f46d52?w=600&auto=format&fit=crop",
         description: "Delicious chocolate chip cookies perfect for a sweet treat.",

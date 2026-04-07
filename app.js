@@ -179,80 +179,80 @@ let recipeData = [
             "Drain and serve topped with the Bolognese sauce and grated parmesan cheese."
         ]
         name: "beef stew and rice";
-image: "C:\Users\Puseletso Motsepe\OneDrive - Sol Plaatje University\Pictures\Screenshots\Screenshot 2026-04-04 130408.png";
-description: "a hearty comfort food classic";
-category: "dinner";
-ingredients:[
-"2 lbs beef chuck, cut into 1-inch cubes"
-"1 tbsp olive oil"
-"1 large onion, diced"
-"3 cloves garlic, minced"
-"4 cups beef broth"
-"2 cups water"
-"3 carrots, sliced"
-"2 potatoes, cubed"
-"1 tsp thyme"
-"1 tsp rosemary"
-"Salt and pepper to taste"
-"2 cups cooked rice"
-];
-
-directions:[
-"Heat the olive oil in a large pot over medium-high heat. Add the beef cubes in batches, ensuring not to overcrowd the pot, and brown on all sides."
-"Add the diced onion and minced garlic to the pot, sautéing until they’re soft and fragrant, about 3 minutes."
-"Return the beef to the pot along with the beef broth, water, carrots, potatoes, thyme, and rosemary. Bring to a boil, then reduce the heat to low, cover, and simmer for 1.5 to 2 hours, or until the beef is tender. Tip: Skim off any excess fat that rises to the surface for a cleaner taste."
-"Once the beef is tender, season the stew with salt and pepper to taste."
-"Ladle the hot stew over a bed of fluffy cooked rice. The rice will soak up all the delicious broth, making every bite a perfect harmony of flavors and textures. Tip: For an extra touch of freshness, garnish with chopped parsley before serving"
-]
-   name: "grilled morrocan chicken";
-image: "C:\Users\Puseletso Motsepe\OneDrive - Sol Plaatje University\Pictures\Screenshots\Screenshot 2026-04-06 213724.png";
-description: "flavorable,aromatic dish inspired by bold spices and cooking tradition of morocco";
-category:"dinner";
+        image: "C:\Users\Puseletso Motsepe\OneDrive - Sol Plaatje University\Pictures\Screenshots\Screenshot 2026-04-04 130408.png";
+        description: "a hearty comfort food classic";
+        category: "dinner";
         ingredients:[
-"1½ to 1¾ lbs boneless skinless chicken breasts (or chicken tenderloins)"
-"¼ cup extra-virgin olive oil"
-"1 teaspoon salt"
-"1 teaspoon sugar"
-"3 cloves garlic, minced"
-"2 teaspoons paprika"
-"1 teaspoon ground cumin"
-"½ teaspoon ground coriander"
-"¼ teaspoon ground ginger"
-"¼ teaspoon ground turmeric"
-"¼ teaspoon ground cinnamon"
-"⅛ teaspoon cayenne pepper"
-];
+            "2 lbs beef chuck, cut into 1-inch cubes"
+            "1 tbsp olive oil"
+            "1 large onion, diced"
+            "3 cloves garlic, minced"
+            "4 cups beef broth"
+            "2 cups water"
+            "3 carrots, sliced"
+            "2 potatoes, cubed"
+            "1 tsp thyme"
+            "1 tsp rosemary"
+            "Salt and pepper to taste"
+            "2 cups cooked rice"
+        ];
+
+        directions:[
+            "Heat the olive oil in a large pot over medium-high heat. Add the beef cubes in batches, ensuring not to overcrowd the pot, and brown on all sides."
+            "Add the diced onion and minced garlic to the pot, sautéing until they’re soft and fragrant, about 3 minutes."
+            "Return the beef to the pot along with the beef broth, water, carrots, potatoes, thyme, and rosemary. Bring to a boil, then reduce the heat to low, cover, and simmer for 1.5 to 2 hours, or until the beef is tender. Tip: Skim off any excess fat that rises to the surface for a cleaner taste."
+            "Once the beef is tender, season the stew with salt and pepper to taste."
+            "Ladle the hot stew over a bed of fluffy cooked rice. The rice will soak up all the delicious broth, making every bite a perfect harmony of flavors and textures. Tip: For an extra touch of freshness, garnish with chopped parsley before serving"
+        ]
+        name: "grilled morrocan chicken";
+        image: "C:\Users\Puseletso Motsepe\OneDrive - Sol Plaatje University\Pictures\Screenshots\Screenshot 2026-04-06 213724.png";
+        description: "flavorable,aromatic dish inspired by bold spices and cooking tradition of morocco";
+        category:"dinner";
+        ingredients:[
+            "1½ to 1¾ lbs boneless skinless chicken breasts (or chicken tenderloins)"
+            "¼ cup extra-virgin olive oil"
+            "1 teaspoon salt"
+            "1 teaspoon sugar"
+            "3 cloves garlic, minced"
+            "2 teaspoons paprika"
+            "1 teaspoon ground cumin"
+            "½ teaspoon ground coriander"
+            "¼ teaspoon ground ginger"
+            "¼ teaspoon ground turmeric"
+            "¼ teaspoon ground cinnamon"
+            "⅛ teaspoon cayenne pepper"
+        ];
        directions:[
-"Place chicken breasts between 2 pieces of wax or parchment paper and, using a meat mallet, pound to an even ½-in (13-mm) thickness. (Skip this step if substituting chicken tenderloins.)"
-"Mix all ingredients except chicken together in a small bowl or measuring cup. Place pounded chicken breasts inside a 1 gallon zip-lock bag. Add marinade to the bag, press air out and seal shut. Massage marinade into the breasts until evenly coated."
-"Place the bag in a bowl in the refrigerator (to protect against leakage), and let the chicken marinate in the fridge for at least 5 hours or overnight."
-"Clean grill and preheat to high. Place chicken breasts on grill, spooning marinade over top. Grill, covered, for 2 to 3 minutes per side. Do not overcook"
-];
+            "Place chicken breasts between 2 pieces of wax or parchment paper and, using a meat mallet, pound to an even ½-in (13-mm) thickness. (Skip this step if substituting chicken tenderloins.)"
+            "Mix all ingredients except chicken together in a small bowl or measuring cup. Place pounded chicken breasts inside a 1 gallon zip-lock bag. Add marinade to the bag, press air out and seal shut. Massage marinade into the breasts until evenly coated."
+            "Place the bag in a bowl in the refrigerator (to protect against leakage), and let the chicken marinate in the fridge for at least 5 hours or overnight."
+            "Clean grill and preheat to high. Place chicken breasts on grill, spooning marinade over top. Grill, covered, for 2 to 3 minutes per side. Do not overcook"
+       ];
 
-name: "blackened catfish with mango avocado salsa";
-image: "C:\Users\Puseletso Motsepe\OneDrive - Sol Plaatje University\Pictures\Screenshots\Screenshot 2026-04-06 214257.png";
-description: "vibrant dish that combines deep,smooky heat with cool,tropical freshness"
-category: "dinner";
-ingredients:[
-"2 teaspoons dried oregano"
-"2 teaspoons ground cumin"
-"2 teaspoons paprika"
-"2-1/4 teaspoons pepper, divided"
-"3/4 teaspoon salt, divided"
-"4 catfish fillets (6 ounces each)"
-"1 medium mango, peeled and cubed"
-"1 medium ripe avocado, peeled and cubed"
-"1/3 cup finely chopped red onion"
-"2 tablespoons minced fresh cilantro"
-"2 tablespoons lime juice"
-"2 teaspoons olive oil"
-];
+        name: "blackened catfish with mango avocado salsa";
+        image: "C:\Users\Puseletso Motsepe\OneDrive - Sol Plaatje University\Pictures\Screenshots\Screenshot 2026-04-06 214257.png";
+        description: "vibrant dish that combines deep,smooky heat with cool,tropical freshness"
+        category: "dinner";
+        ingredients:[
+            "2 teaspoons dried oregano"
+            "2 teaspoons ground cumin"
+            "2 teaspoons paprika"
+            "2-1/4 teaspoons pepper, divided"
+            "3/4 teaspoon salt, divided"
+            "4 catfish fillets (6 ounces each)"
+            "1 medium mango, peeled and cubed"
+            "1 medium ripe avocado, peeled and cubed"
+            "1/3 cup finely chopped red onion"
+            "2 tablespoons minced fresh cilantro"
+            "2 tablespoons lime juice"
+            "2 teaspoons olive oil"
+        ];
 
-directions:[
-"Combine the oregano, cumin, paprika, 2 teaspoons pepper and 1/2 teaspoon salt; rub over fillets. Refrigerate for at least 30 minutes"
-"Meanwhile, in a small bowl, combine the mango, avocado, red onion, cilantro, lime juice and remaining salt and pepper. Chill until serving."
-"In a large cast-iron skillet, cook fillets in oil over medium heat until fish flakes easily with a fork, 5-7 minutes on each side. Serve with salsa."
-];
+        directions:[
+            "Combine the oregano, cumin, paprika, 2 teaspoons pepper and 1/2 teaspoon salt; rub over fillets. Refrigerate for at least 30 minutes"
+            "Meanwhile, in a small bowl, combine the mango, avocado, red onion, cilantro, lime juice and remaining salt and pepper. Chill until serving."
+            "In a large cast-iron skillet, cook fillets in oil over medium heat until fish flakes easily with a fork, 5-7 minutes on each side. Serve with salsa."
+        ];
         
     },
     {

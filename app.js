@@ -126,7 +126,7 @@ Directions:[
 "Bake 10-12 minutes or until fish just begins to flake easily with a fork, turning once.",
 ]
 Name: "Mozzarella Sticks",
-        image: "",
+        image: ""C:\Users\Admin\Pictures\stick.avif"",
         category: "breakfast",
         ingredients: [
 "1/2 cup all-purpose flour",

@@ -182,9 +182,8 @@
     },
     {
         id: 8,
-        name: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwUTry9-3msWd_NWjZ12gfmcP92pmbK5_knL1O-LXkYWPw2X9QrRvBJBB7NQoMPxg57s_y2vopOR2e5Hrtpuyf7LWN9lPK1247d55qOhDNhCuM4j0I82Ep-VGqpHMO_KnFZn3Jp_kvh5-Y5uy9HgLauvmF5xU6lFct-FnvFxa9h_-rGHr0jtmnb9EVd14/s1600/stew%20beef%204%20pn.png",
-        // FIX: was a local Windows path — replaced with a public placeholder image
         image: "beef-stew-and-rice.jpg",
+       name: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwUTry9-3msWd_NWjZ12gfmcP92pmbK5_knL1O-LXkYWPw2X9QrRvBJBB7NQoMPxg57s_y2vopOR2e5Hrtpuyf7LWN9lPK1247d55qOhDNhCuM4j0I82Ep-VGqpHMO_KnFZn3Jp_kvh5-Y5uy9HgLauvmF5xU6lFct-FnvFxa9h_-rGHr0jtmnb9EVd14/s1600/stew%20beef%204%20pn.png",
         description: "A hearty comfort food classic.",
         category: "dinner",
         ingredients: [

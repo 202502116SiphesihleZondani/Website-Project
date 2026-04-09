@@ -4,7 +4,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: hsl(0, 0%, 98%);
-    transition: background-color 0.3, color 0.3;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 body.dark-mode {
@@ -19,8 +19,8 @@ header {
     align-items: center;
     text-align: center;
     padding: 20px;
-    background-color: #fffff0;
-    color: orange;
+    background-color: #ff914f;
+    color: white;
     gap: 14px;
 }
 

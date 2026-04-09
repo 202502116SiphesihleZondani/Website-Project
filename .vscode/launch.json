@@ -5,6 +5,24 @@
     "version": "0.2.0",
     "configurations": [
         {
+<<<<<<< HEAD
+            "name": "Launch Chrome",
+            "request": "launch",
+            "type": "chrome",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "Attach to Chrome",
+            "port": 9222,
+            "request": "attach",
+            "type": "chrome",
+            "webRoot": "${workspaceFolder}"
+        },
+
+        {
+=======
+>>>>>>> fe622859bf0f677e876d69f3d9be755e88266e21
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",

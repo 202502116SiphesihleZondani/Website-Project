@@ -1,5 +1,14 @@
+<<<<<<< HEAD
+    // ─── Recipe Data ────────────────────────────────────────────────────────────
+// Bug fix: image paths were absolute Windows local paths (C:\Users\Admin\...)
+// Fixed to use relative paths pointing to images in the project folder.
+// The Chocolate Chip Cookies image was missing from the repo entirely —
+// replaced with a reliable public placeholder.
+let recipeData = [
+=======
    // ─── Recipe Data ────────────────────────────────────────────────────────────
  let recipeData = [
+>>>>>>> 2f54842707e0aa314d29a89219fd5f77a762a7bd
     {
         id: 1,
         name: "Pancakes",
@@ -47,6 +56,8 @@
     },
     {
         id: 3,
+<<<<<<< HEAD
+=======
         name: "Mega Cheese Toastie",
         // FIX: was "Cheese Toast.webp" which didn't exist — using image1.webp (available in repo)
         image: "https://ignitemag.co.uk/wp-content/uploads/2024/02/Lagomchef-2-820x394.webp",
@@ -155,6 +166,7 @@
     },
     {
         id: 7,
+>>>>>>> 2f54842707e0aa314d29a89219fd5f77a762a7bd
         name: "Spaghetti Bolognese",
         image: "https://images.unsplash.com/photo-1622973536968-3ead9e780960?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         description: "Classic Italian pasta dish with a rich meat sauce.",
@@ -181,6 +193,9 @@
         ]
     },
     {
+<<<<<<< HEAD
+        id: 4,
+=======
         id: 8,
         name: "Beef Stew and Rice",     
         image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwUTry9-3msWd_NWjZ12gfmcP92pmbK5_knL1O-LXkYWPw2X9QrRvBJBB7NQoMPxg57s_y2vopOR2e5Hrtpuyf7LWN9lPK1247d55qOhDNhCuM4j0I82Ep-VGqpHMO_KnFZn3Jp_kvh5-Y5uy9HgLauvmF5xU6lFct-FnvFxa9h_-rGHr0jtmnb9EVd14/s1600/stew%20beef%204%20pn.png",
@@ -321,6 +336,7 @@
     },
     {
         id: 13,
+>>>>>>> 2f54842707e0aa314d29a89219fd5f77a762a7bd
         name: "Chocolate Chip Cookies",
         image: "https://images.unsplash.com/photo-1605243614624-277f48f46d52?w=600&auto=format&fit=crop",
         description: "Delicious chocolate chip cookies perfect for a sweet treat.",
@@ -340,10 +356,12 @@
             "Preheat the oven to 350°F (175°C).",
             "In a large bowl, cream together the butter and sugars until light and fluffy.",
             "Beat in the eggs one at a time, then stir in the vanilla extract.",
-            "Whisk together the flour, baking soda, and salt. Gradually blend into the wet mixture.",
+            "In another bowl, whisk together the flour, baking soda, and salt. Gradually blend the dry ingredients into the wet mixture.",
             "Stir in the chocolate chips.",
             "Drop by rounded spoonfuls onto ungreased cookie sheets and bake for 10–12 minutes or until golden brown."
         ]
+<<<<<<< HEAD
+=======
     },
     {
         id: 14,
@@ -437,6 +455,7 @@
             "Pour the pecan topping over the brownie base and bake for an additional 25 minutes until the two layers have set.",
             "Cool completely before slicing. Optionally drizzle with melted dark chocolate or sprinkle with flaky sea salt."
         ]
+>>>>>>> 2f54842707e0aa314d29a89219fd5f77a762a7bd
     }
 ];
 
@@ -457,7 +476,7 @@ function displayRecipes(recipes) {
     recipes.forEach((recipe, index) => {
         recipeContainer.innerHTML += `
             <div class="recipe-card" data-index="${index}">
-                <img src="${recipe.image}" alt="${recipe.name}" onerror="this.src='https://images.unsplash.com/photo-1495521821757-a1efb6729352?w=600&auto=format&fit=crop'">
+                <img src="${recipe.image}" alt="${recipe.name} served on a plate, ${recipe.description}">
                 <h3>${recipe.name}</h3>
                 <p>${recipe.description}</p>
                 <p><strong>Category:</strong> ${recipe.category.toUpperCase()}</p>
@@ -475,6 +494,7 @@ recipeContainer.addEventListener('click', (event) => {
     const index = Number(card.dataset.index);
     const recipe = currentRecipes[index];
     if (!recipe) return;
+    // Store the recipe so recipe-detail.html can read it without duplicating data
     sessionStorage.setItem('selectedRecipe', JSON.stringify(recipe));
     window.location.href = `recipe-detail.html?id=${recipe.id}`;
 });
@@ -500,6 +520,8 @@ document.getElementById('categoryfilter').addEventListener('change', function() 
 });
 
 // ─── Random Recipe ────────────────────────────────────────────────────────────
+// Bug fix: there were two conflicting listeners on this button.
+// Combined into one: fetches from MealDB and redirects to detail page.
 document.getElementById('randomrecipe').addEventListener('click', async () => {
     try {
         const response = await fetch('https://www.themealdb.com/api/json/v1/1/random.php');
@@ -508,6 +530,7 @@ document.getElementById('randomrecipe').addEventListener('click', async () => {
         sessionStorage.setItem('randomMeal', JSON.stringify(meal));
         window.location.href = 'recipe-detail.html?random=true';
     } catch (err) {
+        // Fallback: show a random local recipe if the API fails
         const randomIndex = Math.floor(Math.random() * recipeData.length);
         displayRecipes([recipeData[randomIndex]]);
     }
@@ -519,6 +542,7 @@ document.getElementById('darkModeToggle').addEventListener('click', () => {
 });
 
 // ─── Add Recipe ───────────────────────────────────────────────────────────────
+// Bug fix: newIngredients and newDirections fields now exist in index.html.
 document.getElementById('addRecipeButton').addEventListener('click', () => {
     const name        = document.getElementById('newName').value.trim();
     const image       = document.getElementById('newImg').value.trim();
@@ -545,7 +569,13 @@ document.getElementById('addRecipeButton').addEventListener('click', () => {
     recipeData.push(newRecipe);
     displayRecipes(recipeData);
 
+    // Clear form
     ['newName','newImg','newDesc','newCategory','newIngredients','newDirections']
         .forEach(id => document.getElementById(id).value = '');
 });
+<<<<<<< HEAD
+
+
+=======
  
+>>>>>>> 2f54842707e0aa314d29a89219fd5f77a762a7bd

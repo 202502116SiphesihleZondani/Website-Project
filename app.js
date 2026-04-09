@@ -1,14 +1,6 @@
-<<<<<<< HEAD
-    // ─── Recipe Data ────────────────────────────────────────────────────────────
-// Bug fix: image paths were absolute Windows local paths (C:\Users\Admin\...)
-// Fixed to use relative paths pointing to images in the project folder.
-// The Chocolate Chip Cookies image was missing from the repo entirely —
-// replaced with a reliable public placeholder.
-let recipeData = [
-=======
+
    // ─── Recipe Data ────────────────────────────────────────────────────────────
  let recipeData = [
->>>>>>> 2f54842707e0aa314d29a89219fd5f77a762a7bd
     {
         id: 1,
         name: "Pancakes",
@@ -56,8 +48,6 @@ let recipeData = [
     },
     {
         id: 3,
-<<<<<<< HEAD
-=======
         name: "Mega Cheese Toastie",
         // FIX: was "Cheese Toast.webp" which didn't exist — using image1.webp (available in repo)
         image: "https://ignitemag.co.uk/wp-content/uploads/2024/02/Lagomchef-2-820x394.webp",
@@ -166,7 +156,6 @@ let recipeData = [
     },
     {
         id: 7,
->>>>>>> 2f54842707e0aa314d29a89219fd5f77a762a7bd
         name: "Spaghetti Bolognese",
         image: "https://images.unsplash.com/photo-1622973536968-3ead9e780960?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         description: "Classic Italian pasta dish with a rich meat sauce.",
@@ -193,9 +182,6 @@ let recipeData = [
         ]
     },
     {
-<<<<<<< HEAD
-        id: 4,
-=======
         id: 8,
         name: "Beef Stew and Rice",     
         image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwUTry9-3msWd_NWjZ12gfmcP92pmbK5_knL1O-LXkYWPw2X9QrRvBJBB7NQoMPxg57s_y2vopOR2e5Hrtpuyf7LWN9lPK1247d55qOhDNhCuM4j0I82Ep-VGqpHMO_KnFZn3Jp_kvh5-Y5uy9HgLauvmF5xU6lFct-FnvFxa9h_-rGHr0jtmnb9EVd14/s1600/stew%20beef%204%20pn.png",
@@ -336,7 +322,6 @@ let recipeData = [
     },
     {
         id: 13,
->>>>>>> 2f54842707e0aa314d29a89219fd5f77a762a7bd
         name: "Chocolate Chip Cookies",
         image: "https://images.unsplash.com/photo-1605243614624-277f48f46d52?w=600&auto=format&fit=crop",
         description: "Delicious chocolate chip cookies perfect for a sweet treat.",
@@ -360,8 +345,6 @@ let recipeData = [
             "Stir in the chocolate chips.",
             "Drop by rounded spoonfuls onto ungreased cookie sheets and bake for 10–12 minutes or until golden brown."
         ]
-<<<<<<< HEAD
-=======
     },
     {
         id: 14,
@@ -455,7 +438,6 @@ let recipeData = [
             "Pour the pecan topping over the brownie base and bake for an additional 25 minutes until the two layers have set.",
             "Cool completely before slicing. Optionally drizzle with melted dark chocolate or sprinkle with flaky sea salt."
         ]
->>>>>>> 2f54842707e0aa314d29a89219fd5f77a762a7bd
     }
 ];
 
@@ -573,9 +555,3 @@ document.getElementById('addRecipeButton').addEventListener('click', () => {
     ['newName','newImg','newDesc','newCategory','newIngredients','newDirections']
         .forEach(id => document.getElementById(id).value = '');
 });
-<<<<<<< HEAD
-
-
-=======
- 
->>>>>>> 2f54842707e0aa314d29a89219fd5f77a762a7bd

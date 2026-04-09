@@ -264,63 +264,63 @@
         ]
     },
     {
-         name: "mashed potatoes and gravy",
-         image: "";
-         description: "Creamy mashed potatoes are an essential part of many cozy fall and winter meals",
-         category: "dinner",
-         ingredients:[
-            "3 pounds medium potatoes, peeled"
-            "1/8 teaspoon dried thyme"
-            "2 teaspoons salt, divided"
-            "1/2 cup butter"
-            "3 garlic cloves, minced"
-            "3/4 cup whole milk"
-            "1/2 teaspoon pepper"
-         GRAVY:
-            "1/4 cup butter"
-            "1/4 cup all-purpose flour"
-            "2 cups unsalted chicken stock"
-            "1/2 teaspoon salt"
+        id: 11,
+        name: "mashed potatoes and gravy",
+        image: "https://cookswithsoul.com/wp-content/uploads/2024/12/mashed-potatoes-and-gravy-8-1024x1536.jpg",
+        description: "Creamy mashed potatoes are an essential part of many cozy fall and winter meals",
+        category: "dinner",
+        ingredients:[
+            "3 pounds medium potatoes, peeled",
+            "1/8 teaspoon dried thyme",
+            "2 teaspoons salt, divided",
+            "1/2 cup butter",
+            "3 garlic cloves, minced",
+            "3/4 cup whole milk",
+            "1/2 teaspoon pepper",
+            "1/4 cup butter",
+            "1/4 cup all-purpose flour",
+            "2 cups unsalted chicken stock",
+            "1/2 teaspoon salt",
             "1/4 teaspoon pepper"
-         ],
-
+        ],
         directions:[
-            "Place potatoes and 1 teaspoon salt in a stock pot; add water to cover. Bring to a boil. Reduce heat; simmer, uncovered, until tender, 15-20 minutes. Drain and return to pan"
-            "Meanwhile, place butter and garlic in a small saucepan. Cook over medium heat until garlic is browned, about 1 minute; add milk. Heat until bubbles appear around the edge of the pan; keep warm."
-            "Mash potatoes while gradually adding milk mixture until desired consistency. Stir in remaining 1 teaspoon salt and pepper."
-            "For gravy, in a small saucepan, melt butter over medium heat. Whisk in flour until smooth; , whisking constantly. Gradually whisk in broth, salt, pepper and thyme. Bring to a boil, stirring constantly; cook and stir until thickened, 1-2 minutes. Serve with potatoes."
+            "Place potatoes and 1 teaspoon salt in a stock pot; add water to cover. Bring to a boil. Reduce heat; simmer, uncovered, until tender, 15-20 minutes. Drain and return to pan.",
+            "Meanwhile, place butter and garlic in a small saucepan. Cook over medium heat until garlic is browned, about 1 minute; add milk. Heat until bubbles appear around the edge of the pan; keep warm.",
+            "Mash potatoes while gradually adding milk mixture until desired consistency. Stir in remaining 1 teaspoon salt and pepper.",
+            "For gravy, in a small saucepan, melt butter over medium heat. Whisk in flour until smooth, whisking constantly. Gradually whisk in broth, salt, pepper and thyme. Bring to a boil, stirring constantly; cook and stir until thickened, 1-2 minutes. Serve with potatoes."
         ]
-
-
+    },
+    {
+        id: 12,
         name: "honey glazed sausage",
-        image: "",
+        image: "https://www.kitchenmomy.com/wp-content/uploads/2025/11/ettckxttslywttvqlw5v-1157x1536.webp",
         description: "honey glazed sausages and rosted sweet potatoes are perfect for a cozy meal ",
         category: "dinner",
         ingredients:[
-            "4 sausages (sliced (chicken or beef))"
-            "2 large sweet potatoes (cubed)"
-            "2 tbsp olive oil"
-            "3 tbsp honey"
-            "2 garlic cloves (minced)"
-            "1 tbsp soy sauce"
-            "Salt & black pepper (to taste)"
+            "4 sausages (sliced (chicken or beef))",
+            "2 large sweet potatoes (cubed)",
+            "2 tbsp olive oil",
+            "3 tbsp honey",
+            "2 garlic cloves (minced)",
+            "1 tbsp soy sauce",
+            "Salt & black pepper (to taste)",
             "Fresh parsley chopped (for garnish)"
         ],
-
-         directions:[
-            "Preheat oven to 400°F (200°C)."
-            "Toss cubed sweet potatoes with olive oil, salt, and pepper."
-            "Spread on a baking sheet and roast for 20 minutes, flipping halfway."
-            "In a large pan, cook the sliced sausages over medium heat until browned on all sides."
-            "Remove and set aside."
-            "In the same pan, sauté garlic until fragrant."
-            "Stir in honey and soy sauce, simmering for 1-2 minutes."
-            "Add the sausages back to the pan, tossing to coat."
-            "Mix the roasted sweet potatoes with the glazed sausages."
+        directions:[
+            "Preheat oven to 400°F (200°C).",
+            "Toss cubed sweet potatoes with olive oil, salt, and pepper.",
+            "Spread on a baking sheet and roast for 20 minutes, flipping halfway.",
+            "In a large pan, cook the sliced sausages over medium heat until browned on all sides.",
+            "Remove and set aside.",
+            "In the same pan, sauté garlic until fragrant.",
+            "Stir in honey and soy sauce, simmering for 1-2 minutes.",
+            "Add the sausages back to the pan, tossing to coat.",
+            "Mix the roasted sweet potatoes with the glazed sausages.",
             "Garnish with fresh parsley and serve warm"
-        ],
-       
-        id: 11,
+        ]
+    },
+    {
+        id: 13,
         name: "Chocolate Chip Cookies",
         image: "https://images.unsplash.com/photo-1605243614624-277f48f46d52?w=600&auto=format&fit=crop",
         description: "Delicious chocolate chip cookies perfect for a sweet treat.",
@@ -346,7 +346,7 @@
         ]
     },
     {
-        id: 12,
+        id: 14,
         name: "Raspberry Mousse",
         // FIX: was a local Windows path — replaced with a public placeholder image
         image: "https://images.unsplash.com/photo-1488900128323-21503983a07e?w=600&auto=format&fit=crop",
@@ -370,7 +370,7 @@
         ]
     },
     {
-        id: 13,
+        id: 15,
         name: "Vanilla Pudding",
         // FIX: was a local Windows path — replaced with a public placeholder image
         image: "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=600&auto=format&fit=crop",
@@ -391,7 +391,7 @@
         ]
     },
     {
-        id: 14,
+        id: 16,
         name: "Oreo Cookie Balls",
         // FIX: was a local Windows path — replaced with a public placeholder image
         image: "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=600&auto=format&fit=crop",
@@ -412,7 +412,7 @@
         ]
     },
     {
-        id: 15,
+        id: 17,
         name: "Pecan Pie Brownies",
         // FIX: was a local Windows path — replaced with a public placeholder image
         image: "https://images.unsplash.com/photo-1515037893149-de7f840978e2?w=600&auto=format&fit=crop",

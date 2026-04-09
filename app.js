@@ -27,7 +27,7 @@
        ]
 
         name: "Strawberries",
-        image: ""C:\Users\Admin\Pictures\a.jpg"",
+        image: "C:\Users\Admin\Pictures\a.jpg",
         category: "breakfast",
         ingredients: [ 
 "Frozen unsweetened strawberries",
@@ -47,7 +47,7 @@ Directions: [
 ]
 
         name: "Pie",
-        image: ""C:\Users\Admin\Pictures\pie.jpg"",
+        image: "C:\Users\Admin\Pictures\pie.jpg",
         category: "breakfast",
         ingredients: [ 
          "6 cups sliced peeled Golden Delicious apples",
@@ -105,7 +105,7 @@ Directions: [
       "If desired, garnish with additional lemon zest.",
 ]
 Name:"Croissant"
-        image: ""C:\Users\Admin\Pictures\croissant breakfast.jpg"",
+        image:"C:\Users\Admin\Pictures\croissant breakfast.jpg",
         category: "breakfast",
         ingredients: [
 "1/2 cup dry bread crumbs",
@@ -126,7 +126,7 @@ Directions:[
 "Bake 10-12 minutes or until fish just begins to flake easily with a fork, turning once.",
 ]
 Name: "Mozzarella Sticks",
-        image: ""C:\Users\Admin\Pictures\stick.avif"",
+        image: "C:\Users\Admin\Pictures\stick.avif",
         category: "breakfast",
         ingredients: [
 "1/2 cup all-purpose flour",

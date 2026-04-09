@@ -1,4 +1,4 @@
-    // ─── Recipe Data ────────────────────────────────────────────────────────────
+   // ─── Recipe Data ────────────────────────────────────────────────────────────
  let recipeData = [
     {
         id: 1,
@@ -103,7 +103,7 @@
         id: 5,
         name: "Chicken Bacon Ranch Panini",
         // FIX: was a Bing search page URL — using the actual image file from the repo
-        image: "chicken-bacon-ranch.webp",
+        image: "chicken-bacon-ranch.webp", // local repo file
         description: "Comforting, hearty and quick to prepare hot pressed sandwich.",
         category: "lunch",
         ingredients: [
@@ -184,7 +184,7 @@
         id: 8,
         name: "Beef Stew and Rice",
         // FIX: was a local Windows path — replaced with a public placeholder image
-        image: "https://images.unsplash.com/photo-1547592180-85f173990554?w=600&auto=format&fit=crop",
+        image: "beef-stew-and-rice.jpg",
         description: "A hearty comfort food classic.",
         category: "dinner",
         ingredients: [
@@ -213,7 +213,7 @@
         id: 9,
         name: "Grilled Moroccan Chicken",
         // FIX: was a local Windows path — replaced with a public placeholder image
-        image: "https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?w=600&auto=format&fit=crop",
+        image: "image/grilled-moroccan-chicken.jpg",
         description: "Flavorful, aromatic dish inspired by the bold spices and cooking traditions of Morocco.",
         category: "dinner",
         ingredients: [
@@ -241,7 +241,7 @@
         id: 10,
         name: "Blackened Catfish with Mango Avocado Salsa",
         // FIX: was a local Windows path — replaced with a public placeholder image
-        image: "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=600&auto=format&fit=crop",
+        image: "blackened-catfish.jpg",
         description: "A vibrant dish combining deep smoky heat with cool tropical freshness.",
         category: "dinner",
         ingredients: [
@@ -493,3 +493,4 @@ document.getElementById('addRecipeButton').addEventListener('click', () => {
     ['newName','newImg','newDesc','newCategory','newIngredients','newDirections']
         .forEach(id => document.getElementById(id).value = '');
 });
+ 

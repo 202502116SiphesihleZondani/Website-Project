@@ -49,7 +49,7 @@
         id: 3,
         name: "Mega Cheese Toastie",
         // FIX: was "Cheese Toast.webp" which didn't exist — using image1.webp (available in repo)
-        image: "image1.webp",
+        image: "https://ignitemag.co.uk/wp-content/uploads/2024/02/Lagomchef-2-820x394.webp",
         description: "The ultimate comfort food, featuring layers of mature cheddar, mozzarella melted to perfection",
         category: "lunch",
         ingredients: [
@@ -103,7 +103,7 @@
         id: 5,
         name: "Chicken Bacon Ranch Panini",
         // FIX: was a Bing search page URL — using the actual image file from the repo
-        image: "chicken-bacon-ranch.webp", // local repo file
+        image: "https://www.pumpkinnspice.com/wp-content/uploads/2016/11/chicken-bacon-ranch-panini-2.jpg",
         description: "Comforting, hearty and quick to prepare hot pressed sandwich.",
         category: "lunch",
         ingredients: [
@@ -128,7 +128,7 @@
         id: 6,
         name: "Macaroni Cheese with Ham",
         // Using the local image file from the repo
-        image: "mac-cheese-ham.jpg",
+        image: "https://chocolatewithgrace.com/wp-content/uploads/2025/08/Mac-and-Cheese-with-Ham-CWG-11-1-of-1-1024x732.jpg",
         description: "Comfort food consisting of tender pasta noodles in a velvety cheese sauce.",
         category: "lunch",
         ingredients: [
@@ -182,7 +182,7 @@
     },
     {
         id: 8,
-        name: "Beef Stew and Rice",
+        name: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwUTry9-3msWd_NWjZ12gfmcP92pmbK5_knL1O-LXkYWPw2X9QrRvBJBB7NQoMPxg57s_y2vopOR2e5Hrtpuyf7LWN9lPK1247d55qOhDNhCuM4j0I82Ep-VGqpHMO_KnFZn3Jp_kvh5-Y5uy9HgLauvmF5xU6lFct-FnvFxa9h_-rGHr0jtmnb9EVd14/s1600/stew%20beef%204%20pn.png",
         // FIX: was a local Windows path — replaced with a public placeholder image
         image: "beef-stew-and-rice.jpg",
         description: "A hearty comfort food classic.",
@@ -213,7 +213,7 @@
         id: 9,
         name: "Grilled Moroccan Chicken",
         // FIX: was a local Windows path — replaced with a public placeholder image
-        image: "image/grilled-moroccan-chicken.jpg",
+        image: "https://www.cookingclassy.com/wp-content/uploads/2017/04/grilled-moroccan-chicken-7-768x1152.jpg",
         description: "Flavorful, aromatic dish inspired by the bold spices and cooking traditions of Morocco.",
         category: "dinner",
         ingredients: [
@@ -241,7 +241,7 @@
         id: 10,
         name: "Blackened Catfish with Mango Avocado Salsa",
         // FIX: was a local Windows path — replaced with a public placeholder image
-        image: "blackened-catfish.jpg",
+        image: "https://www.eatshinebloom.com/wp-content/uploads/2025/09/Whisk_6b97b8c3141946baeee4260e9cd9529cdr.jpeg",
         description: "A vibrant dish combining deep smoky heat with cool tropical freshness.",
         category: "dinner",
         ingredients: [

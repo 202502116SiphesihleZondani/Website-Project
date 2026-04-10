@@ -1,34 +1,84 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-<head>
+ <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Details</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
-        header {
+        .detail-header {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
-            padding: 20px;
-            background-color: #ff914f;
+            padding: 16px 24px;
+            background: linear-gradient(145deg, #ff7a3d 0%, #ff5500 45%, #c93a00 100%);
             color: white;
+            gap: 12px;
         }
+        .detail-header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            margin: 0;
+        }
+        .header-controls {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        .back-btn {
+            padding: 8px 16px;
+            border: 2px solid rgba(255,255,255,0.6);
+            border-radius: 8px;
+            background: rgba(255,255,255,0.15);
+            color: white;
+            cursor: pointer;
+            font-size: 14px;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 500;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: background 0.2s;
+        }
+        .back-btn:hover { background: rgba(255,255,255,0.28); }
+
+        .dark-toggle {
+            background: rgba(255,255,255,0.18);
+            border: none;
+            border-radius: 50%;
+            width: 38px; height: 38px;
+            cursor: pointer;
+            font-size: 18px;
+            display: flex; align-items: center; justify-content: center;
+            transition: background 0.2s;
+        }
+        .dark-toggle:hover { background: rgba(255,255,255,0.3); }
+
         #recipeDetail {
             max-width: 900px;
-            margin: 20px auto;
-            padding: 0 20px;
+            margin: 30px auto;
+            padding: 0 20px 40px;
         }
         .recipe-detail-card {
             background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 14px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
             overflow: hidden;
         }
         body.dark-mode .recipe-detail-card {
-            background-color: #333;
-            color: white;
+            background-color: #2a2018;
+            color: #f5ede6;
+        }
+        body.dark-mode .recipe-detail-card h2,
+        body.dark-mode .recipe-detail-card h3,
+        body.dark-mode .recipe-detail-card p,
+        body.dark-mode .recipe-detail-card li {
+            color: #f5ede6;
         }
         .recipe-detail-card img {
             width: 100%;
@@ -36,51 +86,81 @@
             object-fit: cover;
         }
         .recipe-detail-card .content {
-            padding: 20px;
+            padding: 28px;
         }
-        .recipe-detail-card h2,
-        .recipe-detail-card h3,
+        .recipe-detail-card h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: #1a1008;
+            margin: 0 0 10px;
+        }
+        .recipe-detail-card h3 {
+            font-size: 1.1rem;
+            color: #ff7a3d;
+            margin: 22px 0 8px;
+        }
         .recipe-detail-card p,
         .recipe-detail-card li {
-            margin: 10px 0;
+            color: #4a3828;
+            line-height: 1.7;
+            margin: 6px 0;
         }
-        .recipe-detail-card ul {
-            padding-left: 20px;
+        .recipe-detail-card ul,
+        .recipe-detail-card ol {
+            padding-left: 22px;
         }
-        button,
-        .back-link {
-            padding: 10px 16px;
-            border: none;
-            border-radius: 8px;
-            background-color: #fff;
-            color: #333;
-            cursor: pointer;
-            font-size: 16px;
-            text-decoration: none;
+        .category-badge {
             display: inline-block;
+            background: #fff3ec;
+            color: #ff7a3d;
+            border: 1px solid #ffd0aa;
+            border-radius: 20px;
+            padding: 4px 14px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 14px;
         }
-        .header-controls {
-            display: flex;
-            gap: 10px;
-            align-items: center;
+        body.dark-mode .category-badge {
+            background: #3a2010;
+            border-color: #8a4020;
+        }
+
+        @media (max-width: 600px) {
+            .detail-header h1 { font-size: 1.1rem; }
+            .recipe-detail-card img { height: 200px; }
+            .recipe-detail-card .content { padding: 18px; }
+            .recipe-detail-card h2 { font-size: 1.4rem; }
+            #recipeDetail { margin: 16px auto; padding: 0 12px 30px; }
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Recipe Details</h1>
+    <header class="detail-header">
+        <h1>🍳 Recipe Details</h1>
         <div class="header-controls">
-            <button id="backButton">Back</button>
-            <a class="back-link" href="index.html">Back to Recipe List</a>
+            <a class="back-btn" href="index.html"><i class="fa fa-arrow-left"></i> Back to Recipes</a>
+            <button class="dark-toggle" id="darkModeToggle" aria-label="Toggle dark mode">🌙</button>
         </div>
     </header>
+
     <main id="recipeDetail"></main>
 
-    <script>
-           // Bug fix: recipe-detail.html no longer duplicates the full recipeData array.
-        // It reads the selected recipe from sessionStorage (set by app.js on card click),
-        // or falls back to the MealDB random meal data.
+   <script>
+        // ── Dark mode: persist across pages ──────────────────────────────────
+        const toggle = document.getElementById('darkModeToggle');
 
+        if (localStorage.getItem('darkMode') === 'on') {
+            document.body.classList.add('dark-mode');
+            toggle.textContent = '☀️';
+        }
+
+        toggle.addEventListener('click', () => {
+            const isDark = document.body.classList.toggle('dark-mode');
+            localStorage.setItem('darkMode', isDark ? 'on' : 'off');
+            toggle.textContent = isDark ? '☀️' : '🌙';
+        });
+
+        // ── Recipe rendering ──────────────────────────────────────────────────
         function getQueryParam(name) {
             return new URLSearchParams(window.location.search).get(name);
         }
@@ -108,14 +188,14 @@
 
             recipeDetail.innerHTML = `
                 <div class="recipe-detail-card">
-                    <img src="${recipe.image}" alt="${recipe.name} image">
+                    <img src="${recipe.image}" alt="${recipe.name}">
                     <div class="content">
                         <h2>${recipe.name}</h2>
+                        <span class="category-badge">${recipe.category.toUpperCase()}</span>
                         <p>${recipe.description}</p>
-                        <p><strong>Category:</strong> ${recipe.category.toUpperCase()}</p>
-                        <h3>Ingredients</h3>
+                        <h3>🧂 Ingredients</h3>
                         <ul>${ingredientsList}</ul>
-                        <h3>Directions</h3>
+                        <h3>📋 Directions</h3>
                         <ol>${directionsList}</ol>
                     </div>
                 </div>
@@ -140,11 +220,8 @@
                 };
             }
         } else {
-            // Read from sessionStorage — set by app.js when a card is clicked
             const stored = sessionStorage.getItem('selectedRecipe');
-            if (stored) {
-                recipe = JSON.parse(stored);
-            }
+            if (stored) recipe = JSON.parse(stored);
         }
 
         if (!recipe) {
@@ -152,14 +229,7 @@
         } else {
             renderRecipe(recipe);
         }
-
-        document.getElementById('backButton').addEventListener('click', () => {
-            window.history.back();
-        });
-
-        document.getElementById('darkModeToggle').addEventListener('click', () => {
-            document.body.classList.toggle('dark-mode');
-        });
-         </script>
+    </script>
 </body>
 </html>
+

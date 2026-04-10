@@ -28,7 +28,7 @@
     {
         id: 2,
         name: "Strawberries",
-        image: "C:\Users\Admin\Pictures\a.jpg",
+        image: "https://www.tasteofhome.com/wp-content/uploads/2018/06/Berry-Smoothie-Bowl_EXPS_JMZ18_224489_B03_08_5b.jpg?fit=750%2C750",
         category: "breakfast",
         ingredients: [ 
 "Frozen unsweetened strawberries",
@@ -50,7 +50,7 @@ Directions: [
 {
     id: 3,
     name: "Pie",
-    image: "https://images.unsplash.com/photo-1568571933382-74d440642117?w=600&auto=format&fit=crop",
+    image: "https://snapcalorie-webflow-website.s3.us-east-2.amazonaws.com/media/recipe_pics_v2/italian_easter_pie_pizza_rustica_aka_ham_pie.jpg",
     category: "breakfast",
     ingredients: [ 
         "6 cups sliced peeled Golden Delicious apples",
@@ -87,7 +87,7 @@ Directions: [
 {
     id: 4,
     name: "Soup",
-        image: "C:\Users\Admin\Pictures\soup.jpg",
+        image: "https://www.tasteofhome.com/wp-content/uploads/2024/08/Carrot-Ginger-Soup_EXPS_TOHD24_158298_LeticiaAlmeida_09.jpg?fit=750%2C750",
         category: "breakfast",
         ingredients: [
              " 1 tablespoon olive oil",
@@ -115,7 +115,7 @@ Directions: [
 {
         id: 5,
         name: "Croissant",
-        image: "C:\\Users\\Admin\\Pictures\\croissant breakfast.jpg",
+        image: "https://i.pinimg.com/736x/29/0c/21/290c2110ae86567040d82a7c5c8e57d8.jpg",
         category: "breakfast",
         ingredients: [
 "1/2 cup dry bread crumbs",
@@ -140,7 +140,7 @@ Directions: [
     {
         id: 6,
         name: "Mozzarella Sticks",
-        image: "C:\Users\Admin\Pictures\stick.avif",
+        image: "https://hips.hearstapps.com/hmg-prod/images/mozzarella-sticks-4x3-6739-1-68c339c67ed05.jpeg?crop=0.9998840579710144xw:1xh;center,top&resize=1800:*",
         category: "breakfast",
         ingredients: [
 "1/2 cup all-purpose flour",

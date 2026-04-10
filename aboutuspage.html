@@ -64,7 +64,7 @@
             text-align: justify;
         }
 
-        <!-- headeer image -- >
+        /* --- Header image --- */
         .header-img {
             display: block;
             margin: 0 auto 30px;
@@ -149,9 +149,78 @@
             border-radius: 8px;
             border-left: 4px solid var(--orange);
         }
+
+         /* --- Navigation Bar --- */
+        .site-nav {
+            background-color: #1A2B4C;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 14px 32px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+
+        .nav-logo .logo-icon { font-size: 1.6em; }
+
+        .nav-logo .logo-text {
+            font-size: 1.2em;
+            font-weight: 700;
+            color: #ffffff;
+            letter-spacing: 1px;
+        }
+
+        .nav-links {
+            display: flex !important;
+            gap: 24px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links a {
+            color: rgba(255,255,255,0.85);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95em;
+            padding: 6px 12px;
+            border-radius: 6px;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            background-color: #FF6B35;
+            color: #ffffff;
+        }
+        
     </style>
 </head>
 <body>
+
+     <!-- Navigation Bar -->
+    <nav class="site-nav">
+        <a href="index.html" class="nav-logo">
+            <span class="logo-icon">🍳</span>
+            <span class="logo-text">Cookin'</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutuspage.html" class="active">About Us</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
 
     <div class="container">
         <h1>About Us!</h1>

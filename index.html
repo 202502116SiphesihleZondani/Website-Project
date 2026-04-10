@@ -4,33 +4,69 @@
         <meta charset="utf-8" />
         <title>What's Cooking Today?</title>
         <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
     <header>
-        <h1>🍳 What's Cooking Today?</h1>
-        <form id="searchForm">
-            <div class="search-row">
-                <input id="searchInput" type="text" placeholder="Search meals..." />
-                <button id="searchButton" type="submit">Search</button>
+          <header>
+        <!-- Decorative floating orbs -->
+        <div class="header-orb orb-1"></div>
+        <div class="header-orb orb-2"></div>
+        <div class="header-orb orb-3"></div>
+
+        <!-- Top nav bar -->
+        <nav class="header-nav">
+            <div class="nav-logo">
+                <span class="logo-icon">🍳</span>
+                <span class="logo-text">Cookin'</span>
             </div>
-        </form>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="login.html">Login</a>
+            </div>
+            <button id="darkModeToggle" class="dark-toggle" aria-label="Toggle dark mode">
+                <span class="toggle-icon">🌙</span>
+            </button>
+        </nav>
 
-        <div class="header-actions">
-            <select id="categoryfilter">
-                <option value="">All Categories</option>
-                <option value="breakfast">Breakfast</option>
-                <option value="lunch">Lunch</option>
-                <option value="dinner">Dinner</option>
-                <option value="dessert">Dessert</option>
-            </select>
+        <!-- Hero content -->
+        <div class="header-hero">
+            <p class="header-eyebrow">Your Daily Kitchen Companion</p>
+            <h1>What's Cooking<br><em>Today?</em></h1>
+            <p class="header-subtitle">Discover, create, and share recipes you'll love</p>
 
-            <div class="controls">
-                <button id="randomrecipe">🎲 Surprise Me!</button>
-                <button id="darkModeToggle">🌙 Dark Mode</button>
+            <!-- Search -->
+            <form id="searchForm" class="search-form">
+                <div class="search-row">
+                    <span class="search-icon"><i class="fa fa-search"></i></span>
+                    <input id="searchInput" type="text" placeholder="Search for a recipe…" autocomplete="off" />
+                    <button id="searchButton" type="submit">Search</button>
+                </div>
+            </form>
+
+            <!-- Filter + surprise -->
+            <div class="header-actions">
+                <div class="filter-wrap">
+                    <i class="fa fa-filter filter-icon"></i>
+                    <select id="categoryfilter">
+                        <option value="">All Categories</option>
+                        <option value="breakfast">🌅 Breakfast</option>
+                        <option value="lunch">☀️ Lunch</option>
+                        <option value="dinner">🌙 Dinner</option>
+                        <option value="dessert">🍰 Dessert</option>
+                    </select>
+                </div>
+                <button id="randomrecipe" class="surprise-btn">
+                    <i class="fa fa-shuffle"></i> Surprise Me!
+                </button>
             </div>
         </div>
     </header>
+
 
     <!--Recipes grid-->
     <section id="recipes"></section>

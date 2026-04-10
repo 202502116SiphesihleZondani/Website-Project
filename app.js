@@ -161,7 +161,7 @@ Direction: [
 "Repeat the egg and breadcrumb steps once more for a second coating.",
  "Place the coated sticks on a tray or baking sheet. ",
 "Place the tray in the freezer and chill until firm,  20 to 30 minutes.",
-"Heat 1 ½ inches oil in a large skillet over medium heat until it reaches 350°F on a deep-fry thermometer.",
+"Heat 1 ½ inches oil in a large skillet over medium heat until it reaches 180C on a deep-fry thermometer.",
  "When hot, add 8 mozzarella sticks. Watch closely and turn over to evenly brown, cooking for less than 1 minute. ",
  "Do not allow the cheese to bubble and leak. Use a slotted spoon or spider to remove the mozzarella sticks to a paper towel-lined plate and repeat with the remaining mozzarella sticks, working in batches of 8 sticks at a time.", 
 "Serve the mozzarella sticks with the warm marinara sauce ",
@@ -303,16 +303,16 @@ Direction: [
         description: "Classic Italian pasta dish with a rich meat sauce.",
         category: "dinner",
         ingredients: [
-            "1 lb ground beef",
+            "450 ground beef",
             "1 onion, chopped",
             "2 cloves garlic, minced",
-            "1 can (15 oz) tomato sauce",
-            "1 can (14.5 oz) diced tomatoes",
+            "1 can (450 g) tomato sauce",
+            "1 can (410 g) diced tomatoes",
             "2 tbsp tomato paste",
             "1 tsp dried oregano",
             "1 tsp dried basil",
             "Salt and pepper to taste",
-            "12 oz spaghetti",
+            "340 g spaghetti",
             "Grated parmesan cheese for serving"
         ],
         directions: [
@@ -330,7 +330,7 @@ Direction: [
         description: "A hearty comfort food classic.",
         category: "dinner",
         ingredients: [
-            "2 lbs beef chuck, cut into 1-inch cubes",
+            "900g beef chuck, cut into 1-inch cubes",
             "1 tbsp olive oil",
             "1 large onion, diced",
             "3 cloves garlic, minced",
@@ -359,7 +359,7 @@ Direction: [
         description: "Flavorful, aromatic dish inspired by the bold spices and cooking traditions of Morocco.",
         category: "dinner",
         ingredients: [
-            "1½ to 1¾ lbs boneless skinless chicken breasts",
+            "680g to 800g lbs boneless skinless chicken breasts",
             "¼ cup extra-virgin olive oil",
             "1 teaspoon salt",
             "1 teaspoon sugar",
@@ -392,7 +392,7 @@ Direction: [
             "2 teaspoons paprika",
             "2¼ teaspoons pepper, divided",
             "¾ teaspoon salt, divided",
-            "4 catfish fillets (6 oz each)",
+            "4 catfish fillets (170g each)",
             "1 medium mango, peeled and cubed",
             "1 medium ripe avocado, peeled and cubed",
             "⅓ cup finely chopped red onion",
@@ -413,7 +413,7 @@ Direction: [
         description: "Creamy mashed potatoes are an essential part of many cozy fall and winter meals",
         category: "dinner",
         ingredients:[
-            "3 pounds medium potatoes, peeled",
+            "1.5kg medium potatoes, peeled",
             "1/8 teaspoon dried thyme",
             "2 teaspoons salt, divided",
             "1/2 cup butter",
@@ -450,7 +450,7 @@ Direction: [
             "Fresh parsley chopped (for garnish)"
         ],
         directions:[
-            "Preheat oven to 400°F (200°C).",
+            "Preheat oven to 200°C.",
             "Toss cubed sweet potatoes with olive oil, salt, and pepper.",
             "Spread on a baking sheet and roast for 20 minutes, flipping halfway.",
             "In a large pan, cook the sliced sausages over medium heat until browned on all sides.",
@@ -480,7 +480,7 @@ Direction: [
             "2 cups semisweet chocolate chips"
         ],
         directions: [
-            "Preheat the oven to 350°F (175°C).",
+            "Preheat the oven to 175°C.",
             "In a large bowl, cream together the butter and sugars until light and fluffy.",
             "Beat in the eggs one at a time, then stir in the vanilla extract.",
             "In another bowl, whisk together the flour, baking soda, and salt. Gradually blend the dry ingredients into the wet mixture.",
@@ -542,10 +542,10 @@ Direction: [
         description: "Crunchy Oreo and creamy bites dipped in chocolate.",
         category: "dessert",
         ingredients: [
-            "1 (16 oz.) package of Oreo cookies",
-            "1 (8 oz.) package of cream cheese",
-            "1 (24 oz.) package of white chocolate chips",
-            "1 (12 oz.) package of semisweet chocolate chips (optional)"
+            "1 (450g) package of Oreo cookies",
+            "1 (220g) package of cream cheese",
+            "1 (680g) package of white chocolate chips",
+            "1 (350g) package of semisweet chocolate chips (optional)"
         ],
         directions: [
             "Crush cookies in a blender or food processor until fine. Add cream cheese and blend until the mixture holds together.",

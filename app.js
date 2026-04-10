@@ -24,8 +24,9 @@
             "Cook until bubbles form on the surface, then flip and cook until golden brown on the other side.",
             "Serve with syrup and your favorite toppings."
         ]
-       ]
-
+    },
+    {
+        id: 2,
         name: "Strawberries",
         image: "C:\Users\Admin\Pictures\a.jpg",
         category: "breakfast",
@@ -45,42 +46,47 @@ Directions: [
 "Smoothie Bowl Variations",
 "There are endless smoothie bowl combinations. Add some extra protein to your smoothie bowl by including a handful of spinach and a scoop of protein powder with your mix."
 ]
-
-        name: "Pie",
-        image: "C:\Users\Admin\Pictures\pie.jpg",
-        category: "breakfast",
-        ingredients: [ 
-         "6 cups sliced peeled Golden Delicious apples",
-"3/4 cup plus 2 tablespoons apple juice, divided",
-"3/4 cup sugar",
-"1 teaspoon ground cinnamon",
-"1/2 teaspoon apple pie spice",
-"2 tablespoons cornstarch",
-"1/4 teaspoon vanilla extract",
-"crust:",
-"2-1/2 cups all-purpose flour",
-"1 teaspoon salt",
-"1 cup cold butter",
-"6 to 8 tablespoons ice water",
-"1 large egg, beaten",
-"Vanilla ice cream, optional",
-        ],
-        Direction: [
-            "In a large saucepan, combine apples, 3/4 cup apple juice, sugar, cinnamon and apple pie spice; bring to a boil over medium heat, stirring occasionally.",
-             "Combine cornstarch and remaining apple juice; add to saucepan.",
-              "Return to a boil, stirring constantly.",
-              "Cook and stir 1 minute more or until thickened.",
-              "" Remove from the heat. Stir in vanilla.",
-             "Cool to room temperature, stirring occasionally.",
+    },
+{
+    id: 3,
+    name: "Pie",
+    image: "https://images.unsplash.com/photo-1568571933382-74d440642117?w=600&auto=format&fit=crop",
+    category: "breakfast",
+    ingredients: [ 
+        "6 cups sliced peeled Golden Delicious apples",
+        "3/4 cup plus 2 tablespoons apple juice, divided",
+        "3/4 cup sugar",
+        "1 teaspoon ground cinnamon",
+        "1/2 teaspoon apple pie spice",
+        "2 tablespoons cornstarch",
+        "1/4 teaspoon vanilla extract",
+        "crust:",
+        "2-1/2 cups all-purpose flour",
+        "1 teaspoon salt",
+        "1 cup cold butter",
+        "6 to 8 tablespoons ice water",
+        "1 large egg, beaten",
+        "Vanilla ice cream, optional"
+    ],
+    directions: [
+        "In a large saucepan, combine apples, 3/4 cup apple juice, sugar, cinnamon and apple pie spice; bring to a boil over medium heat, stirring occasionally.",
+        "Combine cornstarch and remaining apple juice; add to saucepan.",
+        "Return to a boil, stirring constantly.",
+        "Cook and stir 1 minute more or until thickened.",
+        "Remove from the heat. Stir in vanilla.",
+        "Cool to room temperature, stirring occasionally.",
         "For crust, combine flour and salt; cut in the butter until mixture is crumbly.",
-         Gradually add water, 1 tablespoon at a time, tossing with a fork until dough can be formed into a ball.",
-         Divide in 2 portions, making 1 piece slightly larger. On a lightly floured surface, roll out larger portion.",
-"Line a 9-in. pie plate with bottom crust; trim even with edge of plate, Add filling.",
- "Roll out remaining dough to fit top of pie; place over filling. Trim, seal and flute edges; if desired, brush with beaten egg. Cut slits in top.",
-"Bake at 400° for 40-45 minutes or until crust is golden brown and apples are tender.",
-"Cool on a wire rack. If desired, serve with vanilla ice cream.",
-        ]
-         name: "Soup",
+        "Gradually add water, 1 tablespoon at a time, tossing with a fork until dough can be formed into a ball.",
+        "Divide in 2 portions, making 1 piece slightly larger. On a lightly floured surface, roll out larger portion.",
+        "Line a 9-in. pie plate with bottom crust; trim even with edge of plate, Add filling.",
+        "Roll out remaining dough to fit top of pie; place over filling. Trim, seal and flute edges; if desired, brush with beaten egg. Cut slits in top.",
+        "Bake at 400° for 40-45 minutes or until crust is golden brown and apples are tender.",
+        "Cool on a wire rack. If desired, serve with vanilla ice cream."
+    ]
+},
+{
+    id: 4,
+    name: "Soup",
         image: "C:\Users\Admin\Pictures\soup.jpg",
         category: "breakfast",
         ingredients: [
@@ -95,6 +101,7 @@ Directions: [
 "1/4 teaspoon ground black pepper",
 "2 tablespoons fresh lemon juice",
 "Additional lemon zest, optional ",
+        ],
 Directions: [
       "In a Dutch oven or stockpot, heat oil over medium heat. ",
       "Add onion; cook and stir until tender, 4-5 minutes. ",
@@ -104,8 +111,11 @@ Directions: [
       "Pulse mixture in a blender or with an immersion blender to desired consistency; stir in lemon juice. ",
       "If desired, garnish with additional lemon zest.",
 ]
-Name:"Croissant"
-        image:"C:\Users\Admin\Pictures\croissant breakfast.jpg",
+    },
+{
+        id: 5,
+        name: "Croissant",
+        image: "C:\\Users\\Admin\\Pictures\\croissant breakfast.jpg",
         category: "breakfast",
         ingredients: [
 "1/2 cup dry bread crumbs",
@@ -116,7 +126,8 @@ Name:"Croissant"
 "1 large egg, beaten",
 "3/4 pound cod fillets, cut into 1-inch strips",
 "Butter-flavored cooking spray",
-Directions:[
+        ],
+Directions: [
         "Preheat oven to 400°.",
          "In a shallow bowl, mix bread crumbs and seasonings.",
           "Place flour and egg in separate shallow bowls.",
@@ -125,7 +136,10 @@ Directions:[
 "Place on a baking sheet coated with cooking spray; spritz fish with butter-flavored cooking spray. ",
 "Bake 10-12 minutes or until fish just begins to flake easily with a fork, turning once.",
 ]
-Name: "Mozzarella Sticks",
+    },
+    {
+        id: 6,
+        name: "Mozzarella Sticks",
         image: "C:\Users\Admin\Pictures\stick.avif",
         category: "breakfast",
         ingredients: [
@@ -137,7 +151,9 @@ Name: "Mozzarella Sticks",
 "16 mozzarella string cheese sticks, cut in half crosswise",
 "Canola or vegetable oil, for frying",
 "1 cup marinara sauce, warmed",
-Direction:[
+],
+
+Direction: [
        "Place the flour in a shallow bowl. In another bowl, whisk together the eggs and milk.",
         "In a third bowl, combine the panko breadcrumbs and parsley. ",
 "Dredge the mozzarella sticks in the flour, shaking off any excess. ",
@@ -152,7 +168,7 @@ Direction:[
 ]
     },
     {
-        id: 2,
+        id: 7,
         name: "Caesar Salad",
         image: "photo-1669283714145-f97867f6c238.avif",
         description: "Crisp romaine lettuce with a creamy Caesar dressing.",
@@ -173,7 +189,7 @@ Direction:[
         ]
     },
     {
-        id: 3,
+        id: 8,
         name: "Mega Cheese Toastie",
         // FIX: was "Cheese Toast.webp" which didn't exist — using image1.webp (available in repo)
         image: "https://ignitemag.co.uk/wp-content/uploads/2024/02/Lagomchef-2-820x394.webp",
@@ -201,7 +217,7 @@ Direction:[
         ]
     },
     {
-        id: 4,
+        id: 9,
         name: "Chicken Burgers",
         // FIX: was a Bing search page URL — replaced with direct image URL
         image: "https://www.tamingtwins.com/wp-content/uploads/2023/06/image-25.jpeg",
@@ -227,7 +243,7 @@ Direction:[
         ]
     },
     {
-        id: 5,
+        id: 10,
         name: "Chicken Bacon Ranch Panini",
         // FIX: was a Bing search page URL — using the actual image file from the repo
         image: "https://www.pumpkinnspice.com/wp-content/uploads/2016/11/chicken-bacon-ranch-panini-2.jpg",
@@ -252,7 +268,7 @@ Direction:[
         ]
     },
     {
-        id: 6,
+        id: 11,
         name: "Macaroni Cheese with Ham",
         // Using the local image file from the repo
         image: "https://chocolatewithgrace.com/wp-content/uploads/2025/08/Mac-and-Cheese-with-Ham-CWG-11-1-of-1-1024x732.jpg",
@@ -281,7 +297,7 @@ Direction:[
         ]
     },
     {
-        id: 7,
+        id: 12,
         name: "Spaghetti Bolognese",
         image: "https://images.unsplash.com/photo-1622973536968-3ead9e780960?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         description: "Classic Italian pasta dish with a rich meat sauce.",
@@ -308,7 +324,7 @@ Direction:[
         ]
     },
     {
-        id: 8,
+        id: 13,
         name: "Beef Stew and Rice",     
         image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwUTry9-3msWd_NWjZ12gfmcP92pmbK5_knL1O-LXkYWPw2X9QrRvBJBB7NQoMPxg57s_y2vopOR2e5Hrtpuyf7LWN9lPK1247d55qOhDNhCuM4j0I82Ep-VGqpHMO_KnFZn3Jp_kvh5-Y5uy9HgLauvmF5xU6lFct-FnvFxa9h_-rGHr0jtmnb9EVd14/s1600/stew%20beef%204%20pn.png",
         description: "A hearty comfort food classic.",
@@ -336,7 +352,7 @@ Direction:[
         ]
     },
     {
-        id: 9,
+        id: 14,
         name: "Grilled Moroccan Chicken",
         // FIX: was a local Windows path — replaced with a public placeholder image
         image: "https://www.cookingclassy.com/wp-content/uploads/2017/04/grilled-moroccan-chicken-7-768x1152.jpg",
@@ -364,7 +380,7 @@ Direction:[
         ]
     },
     {
-        id: 10,
+        id: 15,
         name: "Blackened Catfish with Mango Avocado Salsa",
         // FIX: was a local Windows path — replaced with a public placeholder image
         image: "https://www.eatshinebloom.com/wp-content/uploads/2025/09/Whisk_6b97b8c3141946baeee4260e9cd9529cdr.jpeg",
@@ -391,7 +407,7 @@ Direction:[
         ]
     },
     {
-        id: 11,
+        id: 16,
         name: "mashed potatoes and gravy",
         image: "https://cookswithsoul.com/wp-content/uploads/2024/12/mashed-potatoes-and-gravy-8-1024x1536.jpg",
         description: "Creamy mashed potatoes are an essential part of many cozy fall and winter meals",
@@ -418,7 +434,7 @@ Direction:[
         ]
     },
     {
-        id: 12,
+        id: 17,
         name: "honey glazed sausage",
         image: "https://www.kitchenmomy.com/wp-content/uploads/2025/11/ettckxttslywttvqlw5v-1157x1536.webp",
         description: "honey glazed sausages and rosted sweet potatoes are perfect for a cozy meal ",
@@ -447,7 +463,7 @@ Direction:[
         ]
     },
     {
-        id: 13,
+        id: 18,
         name: "Chocolate Chip Cookies",
         image: "https://images.unsplash.com/photo-1605243614624-277f48f46d52?w=600&auto=format&fit=crop",
         description: "Delicious chocolate chip cookies perfect for a sweet treat.",
@@ -473,7 +489,7 @@ Direction:[
         ]
     },
     {
-        id: 14,
+        id: 19,
         name: "Raspberry Mousse",
         // FIX: was a local Windows path — replaced with a public placeholder image
         image: "https://images.unsplash.com/photo-1488900128323-21503983a07e?w=600&auto=format&fit=crop",
@@ -497,7 +513,7 @@ Direction:[
         ]
     },
     {
-        id: 15,
+        id: 20,
         name: "Vanilla Pudding",
         // FIX: was a local Windows path — replaced with a public placeholder image
         image: "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=600&auto=format&fit=crop",
@@ -518,7 +534,7 @@ Direction:[
         ]
     },
     {
-        id: 16,
+        id: 21,
         name: "Oreo Cookie Balls",
         // FIX: was a local Windows path — replaced with a public placeholder image
         image: "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=600&auto=format&fit=crop",
@@ -539,7 +555,7 @@ Direction:[
         ]
     },
     {
-        id: 17,
+        id: 22,
         name: "Pecan Pie Brownies",
         // FIX: was a local Windows path — replaced with a public placeholder image
         image: "https://images.unsplash.com/photo-1515037893149-de7f840978e2?w=600&auto=format&fit=crop",
